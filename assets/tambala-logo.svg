@@ -1,9 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
-<rect width="1200" height="1200" fill="#020913"/>
-<defs>
- <radialGradient id="g" cx="50%" cy="38%" r="42%"><stop offset="0" stop-color="#0b3850" stop-opacity=".75"/><stop offset="1" stop-color="#020913" stop-opacity="0"/></radialGradient>
-</defs>
-<rect width="1200" height="1200" fill="url(#g)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+<title id="title">Tambala Technologies logo</title>
+<desc id="desc">Blue and cyan Tambala emblem above the words Tambala Technologies.</desc>
 <g transform="translate(600 365)">
  <path d="M-245-150H-25V-15l-72 42-35 220h-82l52-230-112-65z" fill="#2d64e8"/>
  <path d="M25-112H245l-48 132-112 65 52 230h-82L20 27l-45-42V-112z" fill="#39b5e8"/>
