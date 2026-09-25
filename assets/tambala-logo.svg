@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+<rect width="1200" height="1200" fill="#020913"/>
+<defs>
+ <radialGradient id="g" cx="50%" cy="38%" r="42%"><stop offset="0" stop-color="#0b3850" stop-opacity=".75"/><stop offset="1" stop-color="#020913" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="1200" fill="url(#g)"/>
+<g transform="translate(600 365)">
+ <path d="M-245-150H-25V-15l-72 42-35 220h-82l52-230-112-65z" fill="#2d64e8"/>
+ <path d="M25-112H245l-48 132-112 65 52 230h-82L20 27l-45-42V-112z" fill="#39b5e8"/>
+ <path d="M0-40 64 24 0 88-64 24Z" fill="#fff"/>
+ <path d="M0-8 32 24 0 56-32 24Z" fill="#8fdcf2"/>
+</g>
+<text x="600" y="785" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="112" font-weight="800" letter-spacing="2">TAMBALA</text>
+<text x="600" y="870" text-anchor="middle" fill="#8fdcf2" font-family="Arial,Helvetica,sans-serif" font-size="42" letter-spacing="22">TECHNOLOGIES</text>
+<rect x="410" y="908" width="380" height="4" rx="2" fill="#2d64e8"/>
+</svg>
