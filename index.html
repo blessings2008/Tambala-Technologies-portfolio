@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tambala Technologies builds modern websites, digital experiences and practical technology solutions for businesses in Malawi.">
+<meta name="author" content="Tambala Technologies">
+<meta property="og:title" content="Tambala Technologies — Digital products that move businesses forward">
+<meta property="og:description" content="Web development, digital design and practical technology solutions from Malawi.">
+<meta property="og:type" content="website">
+<title>Tambala Technologies — Digital products that move businesses forward</title>
+<style>
+:root{--bg:#07110d;--surface:#0d1b15;--surface2:#12251c;--text:#f4f8f5;--muted:#9caf a4;--line:#1c3428;--accent:#63e6a1;--accent2:#b7ffd7;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#123322 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(7,17,13,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.03em}.brand-mark{width:38px;height:38px;border:1px solid rgba(99,230,161,.5);border-radius:12px;display:grid;place-items:center;color:var(--accent);background:rgba(99,230,161,.08)}.links{display:flex;gap:28px;color:#b7c8bf;font-size:14px}.links a:hover{color:var(--text)}.nav-cta,.btn-primary{background:var(--accent);color:#06100b;padding:11px 17px;border-radius:10px;font-weight:800}.nav-cta{font-size:13px}.hero{padding:110px 0 90px}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--accent);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.14em}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}h1{font-size:clamp(48px,7vw,86px);line-height:.98;letter-spacing:-.065em;max-width:950px;margin:22px 0}.hero h1 span{color:var(--accent)}.lead{max-width:650px;color:#b5c4bc;font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn-secondary{border:1px solid var(--line);background:rgba(255,255,255,.03);padding:11px 17px;border-radius:10px;font-weight:700}.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:70px}.proof-card,.service,.project,.about-card,.contact-card{border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border-radius:18px}.proof-card{padding:20px}.proof-card strong{display:block;font-size:27px}.proof-card small{color:#81958b}
+section{padding:90px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}.section-head h2{font-size:clamp(34px,5vw,54px);letter-spacing:-.05em;line-height:1;margin:10px 0 0}.section-head p{max-width:470px;color:#9caf a4;margin:0}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:28px;min-height:260px}.number{color:var(--accent);font:700 13px ui-monospace,monospace}.service h3{font-size:22px;margin:45px 0 8px}.service p,.project p,.about-card p{color:#91a59a}.service a{display:inline-block;margin-top:18px;color:var(--accent);font-size:14px;font-weight:800}
+.projects{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}.project{padding:30px;min-height:280px;display:flex;flex-direction:column;justify-content:end}.project:first-child{background:linear-gradient(145deg,#123b28,#0d1b15)}.tag{display:inline-block;border:1px solid rgba(99,230,161,.3);color:var(--accent2);border-radius:999px;padding:5px 9px;font-size:11px;width:max-content}.project h3{font-size:30px;margin:12px 0 3px}.project .meta{font-size:13px;color:#71877c}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:16px}.about-card{padding:30px}.about-card h3{font-size:27px;margin-top:0}.principles{display:grid;grid-template-columns:1fr 1fr;gap:10px}.principle{padding:18px;border:1px solid var(--line);border-radius:13px;background:#0a1711}.principle strong{display:block}.principle span{font-size:13px;color:#8ea197}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}.contact-card{padding:32px}.contact-card h2{font-size:42px;line-height:1.05;letter-spacing:-.05em;margin-top:0}.contact-list{display:grid;gap:13px;color:#b4c4bb}.contact-list b{color:var(--text);display:block;font-size:13px}.contact-list a{color:var(--accent)}
+footer{padding:35px 0;border-top:1px solid var(--line);color:#74877d;font-size:13px}.footer{display:flex;justify-content:space-between;gap:20px}.footer strong{color:#cbd8d1}
+@media(max-width:800px){.links{display:none}.nav-cta{display:none}.hero{padding:80px 0 65px}.proof,.grid-3,.projects,.about,.contact{grid-template-columns:1fr}.proof{margin-top:45px}.section-head{display:block}.section-head p{margin-top:18px}.principles{grid-template-columns:1fr}.project:first-child{min-height:330px}.container{width:min(calc(100% - 28px),var(--max))}}
+</style>
+</head>
+<body>
+<header class="nav">
+<div class="container nav-inner">
+<a class="brand" href="#"><span class="brand-mark">T</span><span>Tambala Technologies</span></a>
+<nav class="links" aria-label="Primary navigation"><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<a class="nav-cta" href="#contact">Start a project</a>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="eyebrow"><span class="dot"></span> Technology & digital solutions · Malawi</div>
+<h1>We turn good ideas into <span>useful digital products.</span></h1>
+<p class="lead">Tambala Technologies helps businesses and ambitious people build modern websites, strong digital identities and practical technology solutions that are made to work in the real world.</p>
+<div class="actions"><a class="btn-primary" href="#contact">Start a project →</a><a class="btn-secondary" href="#work">Explore our work</a></div>
+<div class="proof"><div class="proof-card"><strong>Web</strong><small>Modern, responsive websites</small></div><div class="proof-card"><strong>Design</strong><small>Branding & visual communication</small></div><div class="proof-card"><strong>Build</strong><small>Practical digital solutions</small></div></div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-head"><div><div class="eyebrow">What we do</div><h2>Built around the problem.</h2></div><p>Not every business needs the same solution. We combine design, development and technology around what you actually need.</p></div>
+<div class="grid-3">
+<article class="service"><span class="number">01 / WEB</span><h3>Web Development</h3><p>Fast, responsive websites that communicate clearly and make it easier for customers to take action.</p><a href="#contact">Build a website →</a></article>
+<article class="service"><span class="number">02 / DESIGN</span><h3>Graphic & Brand Design</h3><p>Visual systems, social graphics and brand assets that give your business a consistent and professional presence.</p><a href="#contact">Shape the brand →</a></article>
+<article class="service"><span class="number">03 / DIGITAL</span><h3>Digital Solutions</h3><p>Custom tools and workflows designed to solve specific business problems instead of forcing you into a generic template.</p><a href="#contact">Discuss an idea →</a></article>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="container">
+<div class="section-head"><div><div class="eyebrow">Selected work</div><h2>Work with a purpose.</h2></div><p>A growing portfolio of websites, interfaces and digital products created through Tambala Technologies.</p></div>
+<div class="projects">
+<article class="project"><span class="tag">Hospitality · Web</span><h3>Malabi Guest House</h3><div class="meta">A hospitality website focused on room presentation, enquiries and mobile visitors.</div></article>
+<article class="project"><span class="tag">Fintech · Product</span><h3>PocketVault</h3><div class="meta">A savings product concept connecting goals, KYC, payments and a user-first dashboard.</div></article>
+<article class="project"><span class="tag">Education · Digital</span><h3>Health Science Allocation</h3><div class="meta">A data-driven concept for managing student and district allocation workflows.</div></article>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container about">
+<div class="about-card"><div class="eyebrow">Why Tambala</div><h3>Small team. Serious attention to detail.</h3><p>We care about the details that make a digital product feel trustworthy: clear messaging, thoughtful interfaces, responsive layouts and technology that has a reason to exist.</p></div>
+<div class="about-card"><div class="principles"><div class="principle"><strong>Human-first</strong><span>Design for the people actually using it.</span></div><div class="principle"><strong>Practical</strong><span>Build what creates real value.</span></div><div class="principle"><strong>Mobile-ready</strong><span>Designed for the devices people use.</span></div><div class="principle"><strong>Built to grow</strong><span>Leave room for the next version.</span></div></div></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact">
+<div class="contact-card"><div class="eyebrow">Have an idea?</div><h2>Let's build something people can actually use.</h2><p class="lead">Tell us what you are trying to build, improve or launch. We can start with a conversation and work from there.</p><div class="actions"><a class="btn-primary" href="https://wa.me/265892025111">WhatsApp us →</a></div></div>
+<div class="contact-card"><div class="contact-list"><div><b>Phone / WhatsApp</b><a href="tel:+265892025111">+265 892 025 111</a></div><div><b>Email</b><a href="mailto:madalitsotambala2@gmail.com">madalitsotambala2@gmail.com</a></div><div><b>Location</b><span>Malawi</span></div><div><b>Business</b><span>Tambala Technologies</span></div></div></div>
+</div>
+</section>
+</main>
+
+<footer><div class="container footer"><span>© 2026 <strong>Tambala Technologies</strong>. All rights reserved.</span><span>Building Ideas. Designing Possibilities.</span></div></footer>
+</body>
+</html>
