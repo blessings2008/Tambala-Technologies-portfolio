@@ -5,57 +5,236 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Tambala Technologies — websites, digital products and technology solutions from Malawi.">
 <meta name="author" content="Tambala Technologies">
-<title>Tambala Technologies — Build something useful.</title>
+<title>Tambala Technologies — Digital experiences that work.</title>
 <style>
-:root{--black:#050706;--paper:#f1f0e9;--acid:#b7ff3c;--grey:#a6aaa3;--dark:#10130f;--line:#252923;--max:1280px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--paper);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}.page{width:min(calc(100% - 36px),var(--max));margin:auto}
-.top{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);font-size:12px;text-transform:uppercase;letter-spacing:.08em}.logo{font-weight:900;font-size:15px;letter-spacing:-.04em}.top nav{display:flex;gap:26px;color:#92978f}.top nav a:hover{color:var(--paper)}.top .talk{color:var(--acid)}
-.hero{min-height:calc(100vh - 78px);display:grid;align-content:center;padding:70px 0 90px;position:relative}.hero:after{content:"T";position:absolute;right:-.08em;bottom:-.22em;font-size:min(60vw,760px);font-weight:900;line-height:.7;color:#0c100b;z-index:-1}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:var(--acid);margin-bottom:25px}.hero h1{font-size:clamp(65px,12.2vw,178px);line-height:.78;letter-spacing:-.085em;margin:0;max-width:1150px}.hero h1 span{display:block}.hero h1 .outline{-webkit-text-stroke:1px #747970;color:transparent}.hero-bottom{display:flex;justify-content:space-between;align-items:end;margin-top:55px;gap:30px}.hero-bottom p{max-width:480px;color:var(--grey);font-size:16px;line-height:1.6;margin:0}.roundbtn{width:76px;height:76px;border:1px solid #4b5149;border-radius:50%;display:grid;place-items:center;color:var(--acid);font-size:24px;transition:.25s}.roundbtn:hover{background:var(--acid);color:#000;transform:rotate(45deg)}
-.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:18px 0;color:#656b63;font-size:12px;letter-spacing:.18em;text-transform:uppercase}.marquee span{margin-right:45px}.marquee b{color:var(--acid)}
-section{padding:130px 0}.label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6f756c;margin-bottom:45px}.label b{color:var(--acid);font-weight:500}
-.intro{display:grid;grid-template-columns:.32fr 1fr;gap:30px}.intro h2{font-size:clamp(40px,6.2vw,82px);line-height:.94;letter-spacing:-.07em;margin:0;max-width:980px}.intro h2 i{font-style:normal;color:#666c63}
-.service-list{margin-top:90px;border-top:1px solid var(--line)}.service{display:grid;grid-template-columns:80px 1fr 1fr 40px;gap:25px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line);transition:.2s}.service:hover{padding-left:14px;padding-right:14px;background:#0b0e0a}.service .num{color:var(--acid);font-size:11px}.service h3{font-size:clamp(27px,3.3vw,47px);letter-spacing:-.05em;margin:0}.service p{color:#777d74;font-size:14px;margin:0;max-width:380px}.service .arr{color:var(--acid);font-size:22px}
-.work-intro{display:flex;justify-content:space-between;align-items:end;gap:30px}.work-intro h2{font-size:clamp(55px,8vw,110px);letter-spacing:-.08em;line-height:.78;margin:0}.work-intro p{max-width:330px;color:var(--grey);margin:0}.projects{margin-top:65px;display:grid;grid-template-columns:1.65fr .9fr;gap:18px}.project{min-height:620px;position:relative;overflow:hidden;padding:32px;display:flex;flex-direction:column;justify-content:end;background:#11150f;border:1px solid #292e27}.project:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 72% 24%,rgba(183,255,60,.28),transparent 30%),linear-gradient(145deg,#19321d,#0c100b 65%);opacity:.9}.project:nth-child(2):before{background:radial-gradient(circle at 35% 25%,rgba(65,147,255,.25),transparent 30%),linear-gradient(145deg,#101e27,#0c100b 65%)}.project:nth-child(3):before{background:radial-gradient(circle at 70% 30%,rgba(255,176,72,.18),transparent 30%),linear-gradient(145deg,#282016,#0c100b 65%)}.project>*{position:relative}.project-stack{display:grid;gap:18px}.project-stack .project{min-height:301px}.project .type{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--acid);margin-bottom:12px}.project h3{font-size:clamp(36px,5vw,72px);line-height:.85;letter-spacing:-.07em;margin:0 0 13px}.project-stack h3{font-size:38px}.project p{color:#9ca198;max-width:530px;margin:0}.project .num{position:absolute;right:30px;top:30px;color:#697067;font-size:12px}
-.statement{padding:120px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.statement h2{font-size:clamp(48px,8vw,110px);line-height:.84;letter-spacing:-.08em;margin:0;max-width:1100px}.statement h2 span{color:#555b53}.statement h2 b{color:var(--acid)}
-.about{display:grid;grid-template-columns:.5fr 1fr;gap:70px}.about h2{font-size:clamp(45px,6vw,80px);line-height:.86;letter-spacing:-.07em;margin:0}.about-copy{max-width:700px}.about-copy p{font-size:23px;line-height:1.35;margin:0 0 45px}.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.fact{padding:22px 0;border-bottom:1px solid var(--line)}.fact strong{display:block;font-size:18px}.fact span{display:block;color:#737970;font-size:13px;margin-top:5px}
-.contact{background:var(--paper);color:#080a07;padding:70px 6vw;display:grid;grid-template-columns:1.2fr .8fr;gap:60px}.contact .label{color:#60655e}.contact h2{font-size:clamp(50px,7vw,100px);line-height:.82;letter-spacing:-.08em;margin:0 0 35px}.contact h2 span{color:#697066}.contact p{max-width:570px;color:#5d635c}.contact-links{display:flex;flex-direction:column;justify-content:end;gap:20px}.contact-links div{border-top:1px solid #c8c8bf;padding-top:14px}.contact-links small{display:block;text-transform:uppercase;letter-spacing:.14em;color:#747971;font-size:10px}.contact-links a{font-size:20px;font-weight:700}.contact-button{display:inline-flex;margin-top:25px;background:#090b08;color:var(--acid);padding:14px 19px;border-radius:2px;font-weight:800}
-footer{padding:30px 0;color:#626860;font-size:11px;text-transform:uppercase;letter-spacing:.1em}.foot{display:flex;justify-content:space-between;gap:20px}
-@media(max-width:800px){.page{width:min(calc(100% - 24px),var(--max))}.top nav{display:none}.hero{padding:65px 0}.hero h1{font-size:clamp(62px,18vw,105px)}.hero-bottom{align-items:start}.roundbtn{flex:0 0 auto}.intro,.about,.contact{grid-template-columns:1fr}.intro{gap:35px}.service{grid-template-columns:45px 1fr 28px}.service p{display:none}.projects{grid-template-columns:1fr}.project{min-height:470px}.project-stack .project{min-height:300px}.work-intro{display:block}.work-intro p{margin-top:25px}.about{gap:45px}.about-copy p{font-size:19px}.contact{padding:45px 28px}.contact-links{margin-top:20px}.foot{display:block}.foot span{display:block;margin:7px 0}.hero:after{font-size:100vw}}
+:root{
+  --bg:#0b0b0a;--surface:#121210;--surface2:#171714;--orange:#ff9f0a;--orange2:#ffb52e;
+  --text:#f5f2ea;--muted:#9b9890;--line:#292824;--max:1180px;--radius:28px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button,input,textarea,select{font:inherit}
+.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+.top{height:86px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.04em}
+.brand-mark{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:#111;font-weight:950;font-size:13px}
+.brand span:last-child{font-size:17px}
+.nav{display:flex;align-items:center;gap:34px;color:#8e8c86;font-size:13px}
+.nav a:hover{color:#fff}
+.top-cta{background:#f4f1e9;color:#111;padding:12px 20px;border-radius:999px;font-size:12px;font-weight:800}
+.hero{padding:62px 0 110px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:55px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#aaa79f;font-size:11px;text-transform:uppercase;letter-spacing:.14em;margin-bottom:24px}
+.eyebrow i{display:block;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.hero h1{font-size:clamp(58px,8.2vw,116px);line-height:.88;letter-spacing:-.075em;margin:0;max-width:800px}
+.hero h1 .orange{color:var(--orange)}
+.hero h1 .soft{color:#8c8981}
+.hero-copy{max-width:560px;color:#aaa79f;line-height:1.65;font-size:16px;margin:30px 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:999px;font-size:13px;font-weight:800;transition:.2s}
+.btn-primary{background:var(--orange);color:#111}
+.btn-primary:hover{background:var(--orange2);transform:translateY(-2px)}
+.btn-ghost{border:1px solid #383631;color:#ddd9d0}
+.btn-ghost:hover{border-color:#69655d}
+.hero-art{min-height:550px;border:1px solid #292824;border-radius:42px;background:
+ radial-gradient(circle at 48% 25%,rgba(255,159,10,.35),transparent 23%),
+ linear-gradient(145deg,#1b1a16,#0e0e0c 65%);position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.hero-art:before{content:"T";position:absolute;right:-35px;top:-95px;font-size:470px;line-height:1;font-weight:950;color:rgba(255,159,10,.06)}
+.hero-art:after{content:"";position:absolute;width:270px;height:270px;border-radius:50%;border:1px solid rgba(255,159,10,.25);top:72px;left:50%;transform:translateX(-50%)}
+.person{width:78%;height:78%;border-radius:190px 190px 0 0;background:
+ radial-gradient(circle at 50% 28%,#d5b08a 0 8%,transparent 8.5%),
+ radial-gradient(circle at 50% 33%,#1d1914 0 17%,transparent 17.5%),
+ linear-gradient(135deg,#3a2a1a,#15130f 48%,#292016);
+position:relative;z-index:2;filter:saturate(.9)}
+.person:before{content:"TAMBALA";position:absolute;left:50%;top:52%;transform:translate(-50%,-50%) rotate(-90deg);font-size:72px;font-weight:950;letter-spacing:-.08em;color:rgba(255,255,255,.06)}
+.art-tag{position:absolute;z-index:4;background:#f4f1e9;color:#111;border-radius:999px;padding:11px 15px;font-size:11px;font-weight:850}
+.tag-one{left:22px;top:28px}.tag-two{right:22px;bottom:105px;background:var(--orange)}
+.orbit{position:absolute;width:120px;height:120px;border:1px dashed rgba(255,159,10,.5);border-radius:50%;z-index:3;right:48px;top:110px}
+.orbit b{position:absolute;right:-5px;top:50%;width:9px;height:9px;background:var(--orange);border-radius:50%}
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;color:#77746d;font-size:11px;text-transform:uppercase;letter-spacing:.16em}
+.trust-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.trust b{color:#b6b1a7;font-weight:700}
+.section{padding:120px 0}
+.section-head{display:flex;justify-content:space-between;gap:40px;align-items:flex-end;margin-bottom:42px}
+.section-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.15em;color:var(--orange);margin-bottom:14px}
+.section h2{font-size:clamp(42px,6vw,78px);letter-spacing:-.065em;line-height:.9;margin:0}
+.section-head p{max-width:390px;color:var(--muted);line-height:1.6;margin:0}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px;min-height:250px;position:relative;transition:.25s}
+.service:hover{transform:translateY(-4px);border-color:#45423b}
+.service-no{color:var(--orange);font-size:11px;font-weight:800}
+.service h3{font-size:31px;letter-spacing:-.05em;margin:52px 0 10px}
+.service p{color:var(--muted);line-height:1.55;margin:0;max-width:430px}
+.service-arrow{position:absolute;right:25px;top:24px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#211f1a;color:var(--orange)}
+.work{display:grid;grid-template-columns:1.35fr .85fr;gap:16px}
+.card{border:1px solid var(--line);background:var(--surface);border-radius:32px;overflow:hidden;min-height:490px;position:relative}
+.card.small{min-height:237px}
+.card-visual{height:320px;margin:14px;border-radius:23px;background:#1b1a16;position:relative;overflow:hidden}
+.card:first-child .card-visual{background:linear-gradient(145deg,#f5efe1 0 31%,#191815 31% 100%)}
+.card:first-child .card-visual:after{content:"MALABI";position:absolute;left:25px;bottom:22px;font-size:48px;font-weight:950;letter-spacing:-.08em;color:#111}
+.card:nth-child(2) .card-visual{background:linear-gradient(145deg,#171713,#272016)}
+.card:nth-child(2) .card-visual:after{content:"PV";position:absolute;right:22px;bottom:-28px;font-size:190px;font-weight:950;color:rgba(255,159,10,.14)}
+.card:nth-child(3) .card-visual{background:linear-gradient(145deg,#1b1d1b,#10110f)}
+.card:nth-child(3) .card-visual:after{content:"DATA";position:absolute;left:20px;bottom:25px;font-size:44px;font-weight:900;color:#8f958d}
+.mock-ui{position:absolute;left:18%;right:18%;top:22%;bottom:18%;background:#0d0d0c;border:1px solid #444039;border-radius:16px;box-shadow:0 18px 40px #0008;padding:15px}
+.mock-ui span{display:block;width:55%;height:7px;border-radius:20px;background:#6b675e;margin:7px 0}
+.mock-ui span:nth-child(2){width:82%;height:24px;background:var(--orange)}
+.mock-ui span:nth-child(3){width:70%;background:#393731}
+.card-info{padding:8px 28px 28px;display:flex;justify-content:space-between;gap:20px}
+.card-info h3{font-size:25px;letter-spacing:-.04em;margin:0 0 5px}
+.card-info p{font-size:12px;color:#85827b;margin:0}
+.pill{align-self:start;border:1px solid #3b3933;border-radius:999px;padding:8px 11px;color:#aaa69e;font-size:10px;white-space:nowrap}
+.work-stack{display:grid;gap:16px}
+.statement{background:var(--orange);color:#111;border-radius:38px;padding:70px 7%;position:relative;overflow:hidden}
+.statement:after{content:"✦";position:absolute;right:4%;bottom:-40px;font-size:240px;opacity:.1}
+.statement p{font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:850;margin:0 0 20px}
+.statement h2{font-size:clamp(45px,7vw,94px);line-height:.86;letter-spacing:-.075em;max-width:1000px;margin:0}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}
+.about-copy{font-size:19px;color:#b0aca3;line-height:1.6}
+.about-copy p{margin:0 0 28px}
+.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:40px}
+.fact{padding:20px 0;border-bottom:1px solid var(--line)}
+.fact strong{display:block;color:#f0ece3;font-size:15px}
+.fact span{display:block;color:#77746d;font-size:12px;margin-top:5px}
+.contact{padding-bottom:80px}
+.contact-box{background:var(--surface);border:1px solid var(--line);border-radius:38px;padding:65px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px}
+.contact-box h2{font-size:clamp(48px,7vw,88px);line-height:.86;letter-spacing:-.075em;margin:0 0 25px}
+.contact-box h2 span{color:var(--orange)}
+.contact-box p{color:var(--muted);max-width:520px;line-height:1.6}
+.contact-links{display:flex;flex-direction:column;justify-content:center;gap:15px}
+.contact-link{padding:18px 0;border-bottom:1px solid var(--line)}
+.contact-link small{display:block;color:#77746d;text-transform:uppercase;letter-spacing:.12em;font-size:9px;margin-bottom:5px}
+.contact-link a,.contact-link strong{font-size:16px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#6f6c65;font-size:10px;text-transform:uppercase;letter-spacing:.12em}
+.foot{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){
+ .wrap{width:min(calc(100% - 24px),var(--max))}
+ .nav{display:none}
+ .top{height:74px}
+ .hero{padding:45px 0 70px}
+ .hero-grid{grid-template-columns:1fr}
+ .hero-art{min-height:430px}
+ .hero h1{font-size:clamp(58px,15vw,95px)}
+ .section{padding:85px 0}
+ .section-head{display:block}.section-head p{margin-top:22px}
+ .services,.work,.about,.contact-box{grid-template-columns:1fr}
+ .work-stack{grid-template-columns:1fr 1fr}
+ .card,.card.small{min-height:370px}
+ .card.small .card-visual{height:210px}
+ .card-visual{height:245px}
+ .contact-box{padding:40px 28px}
+ .statement{border-radius:28px;padding:50px 28px}
+ .foot{display:block}.foot span{display:block;margin:8px 0}
+}
+@media(max-width:560px){
+ .top-cta{padding:10px 14px}
+ .brand span:last-child{font-size:15px}
+ .hero-art{min-height:380px;border-radius:28px}
+ .services{grid-template-columns:1fr}
+ .service{min-height:220px}
+ .work-stack{grid-template-columns:1fr}
+ .card,.card.small{min-height:400px}
+ .card.small .card-visual,.card-visual{height:260px}
+ .trust-row{display:grid;grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
 <body>
-<div class="page">
-<header class="top"><a class="logo" href="#">TAMBALA / TECHNOLOGIES</a><nav><a href="#build">What we build</a><a href="#work">Work</a><a href="#studio">Studio</a></nav><a class="talk" href="#contact">Let's talk ↗</a></header>
+<div class="wrap">
+<header class="top">
+<a class="brand" href="#"><span class="brand-mark">T</span><span>Tambala Technologies</span></a>
+<nav class="nav"><a href="#services">Services</a><a href="#work">Work</a><a href="#studio">Studio</a></nav>
+<a class="top-cta" href="#contact">Let's talk ↗</a>
+</header>
 
 <main>
 <section class="hero">
-<div class="kicker">Digital studio / Malawi / 2026</div>
-<h1><span>BUILD</span><span class="outline">SOMETHING</span><span>USEFUL.</span></h1>
-<div class="hero-bottom"><p>Tambala Technologies designs and builds websites, digital products and practical technology for people with something worth bringing to the world.</p><a class="roundbtn" href="#work" aria-label="Explore work">↓</a></div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow"><i></i> Digital studio · Malawi</div>
+<h1>We turn <span class="orange">ideas</span> into digital <span class="soft">experiences.</span></h1>
+<p class="hero-copy">Tambala Technologies designs and builds websites, digital products and practical technology for businesses and people with something worth building.</p>
+<div class="actions"><a class="btn btn-primary" href="#work">Explore our work ↗</a><a class="btn btn-ghost" href="#contact">Start a project</a></div>
+</div>
+<div class="hero-art">
+<div class="art-tag tag-one">Design + Development</div>
+<div class="orbit"><b></b></div>
+<div class="person"></div>
+<div class="art-tag tag-two">Built in Malawi ✦</div>
+</div>
+</div>
 </section>
 
-<div class="marquee"><span><b>WEB</b> — DESIGN — DIGITAL PRODUCTS — SYSTEMS — <b>WEB</b> — DESIGN — DIGITAL PRODUCTS — SYSTEMS —</span></div>
+<div class="trust"><div class="trust-row"><span><b>01</b> Web experiences</span><span><b>02</b> Digital products</span><span><b>03</b> Business systems</span><span><b>04</b> Visual identity</span></div></div>
 
-<section id="build"><div class="intro"><div class="label"><b>01</b> / What we build</div><div><h2>Not decoration.<br><i>Not technology for technology's sake.</i><br>Things that <b>work.</b></h2>
-<div class="service-list">
-<div class="service"><span class="num">01</span><h3>Web experiences</h3><p>Websites that make a business easier to understand, trust and contact.</p><span class="arr">↗</span></div>
-<div class="service"><span class="num">02</span><h3>Digital products</h3><p>Interfaces and product ideas turned into usable digital experiences.</p><span class="arr">↗</span></div>
-<div class="service"><span class="num">03</span><h3>Business systems</h3><p>Focused tools and workflows built around real operational problems.</p><span class="arr">↗</span></div>
-<div class="service"><span class="num">04</span><h3>Brand & visual design</h3><p>Identity and communication that makes the right first impression.</p><span class="arr">↗</span></div>
-</div></div></div></section>
-
-<section id="work"><div class="work-intro"><div><div class="label"><b>02</b> / Selected work</div><h2>THE<br>WORK.</h2></div><p>Different problems. Different industries. One belief: digital work should have a reason to exist.</p></div>
-<div class="projects"><article class="project"><span class="num">01</span><div class="type">Hospitality / Website</div><h3>Malabi<br>Guest House</h3><p>A modern hospitality experience focused on rooms, trust and direct enquiries.</p></article>
-<div class="project-stack"><article class="project"><span class="num">02</span><div class="type">Fintech / Product</div><h3>PocketVault</h3><p>A savings product concept built around goals, payments and clarity.</p></article><article class="project"><span class="num">03</span><div class="type">Education / Digital</div><h3>Health Science Allocation</h3><p>A data-driven workflow concept for student and district allocation.</p></article></div></div>
+<section class="section" id="services">
+<div class="section-head"><div><div class="section-kicker">01 / What we do</div><h2>Ideas, designed<br>to <span style="color:var(--orange)">work.</span></h2></div><p>We combine strategy, visual design and development to make digital work that looks good and does something useful.</p></div>
+<div class="services">
+<article class="service"><span class="service-no">01</span><span class="service-arrow">↗</span><h3>Website Design</h3><p>Modern, responsive websites that help businesses look credible, communicate clearly and turn visitors into enquiries.</p></article>
+<article class="service"><span class="service-no">02</span><span class="service-arrow">↗</span><h3>Digital Products</h3><p>Product interfaces and web applications shaped around real users, real workflows and real problems.</p></article>
+<article class="service"><span class="service-no">03</span><span class="service-arrow">↗</span><h3>Business Systems</h3><p>Focused digital tools that simplify repetitive work, organize information and create better customer experiences.</p></article>
+<article class="service"><span class="service-no">04</span><span class="service-arrow">↗</span><h3>Brand & Visuals</h3><p>Distinct visual direction for businesses that want to be remembered before they are compared.</p></article>
+</div>
 </section>
 
-<div class="statement"><div class="page"><h2><span>We don't build websites</span><br>just to put them online.<br><b>We build reasons to click.</b></h2></div></div>
+<section class="section" id="work">
+<div class="section-head"><div><div class="section-kicker">02 / Selected work</div><h2>Built for<br>real <span style="color:var(--orange)">people.</span></h2></div><p>A growing body of work across hospitality, fintech, education and business technology.</p></div>
+<div class="work">
+<article class="card">
+<div class="card-visual"><div class="mock-ui"><span></span><span></span><span></span><span style="width:42%;height:7px;background:#555149"></span></div></div>
+<div class="card-info"><div><h3>Malabi Guest House</h3><p>Hospitality · Website</p></div><span class="pill">Live project</span></div>
+</article>
+<div class="work-stack">
+<article class="card small">
+<div class="card-visual"><div class="mock-ui"><span></span><span></span><span></span></div></div>
+<div class="card-info"><div><h3>PocketVault</h3><p>Fintech · Product</p></div><span class="pill">Building</span></div>
+</article>
+<article class="card small">
+<div class="card-visual"></div>
+<div class="card-info"><div><h3>Health Science Allocation</h3><p>Education · System</p></div><span class="pill">Concept</span></div>
+</article>
+</div>
+</div>
+</section>
 
-<section id="studio"><div class="about"><div><div class="label"><b>03</b> / The studio</div><h2>SMALL<br>TEAM.<br>BIG<br>ATTENTION.</h2></div><div class="about-copy"><p>Tambala Technologies is an independent digital studio from Malawi. We combine design, development and problem-solving to create useful digital experiences for businesses and ambitious ideas.</p><p style="color:#70766e;font-size:15px">We care about the details people feel: a page loading quickly, a message making sense, a form actually working, a brand looking like it belongs.</p><div class="facts"><div class="fact"><strong>Human-first</strong><span>Built around real people.</span></div><div class="fact"><strong>Mobile-ready</strong><span>Designed for everyday devices.</span></div><div class="fact"><strong>Practical</strong><span>Technology with a purpose.</span></div><div class="fact"><strong>Built to grow</strong><span>Ready for the next version.</span></div></div></div></div></section>
+<section class="section">
+<div class="statement">
+<p>The Tambala approach</p>
+<h2>Don't build digital things just to have them. Build something people <span style="color:#fff">actually use.</span></h2>
+</div>
+</section>
 
-<section id="contact"><div class="contact"><div><div class="label">04 / Start something</div><h2>Have an idea?<br><span>Let's make it real.</span></h2><p>Tell us what you're trying to build, improve or launch. Start with a conversation — we'll figure out the rest.</p><a class="contact-button" href="https://wa.me/265892025111">Start on WhatsApp ↗</a></div><div class="contact-links"><div><small>Email</small><a href="mailto:madalitsotambala2@gmail.com">madalitsotambala2@gmail.com</a></div><div><small>Phone / WhatsApp</small><a href="tel:+265892025111">+265 892 025 111</a></div><div><small>Based in</small><strong>Malawi / Working digitally</strong></div></div></div></section>
+<section class="section" id="studio">
+<div class="about">
+<div><div class="section-kicker">03 / The studio</div><h2>Small studio.<br><span style="color:var(--orange)">Serious</span><br>attention.</h2></div>
+<div class="about-copy">
+<p>Tambala Technologies is an independent digital studio from Malawi. We bring design, development and problem-solving together to create useful digital experiences.</p>
+<p>From the first idea to the final interaction, we care about the details people notice — and the ones they don't.</p>
+<div class="facts">
+<div class="fact"><strong>Human-first</strong><span>Built around real people.</span></div>
+<div class="fact"><strong>Mobile-ready</strong><span>Designed for everyday devices.</span></div>
+<div class="fact"><strong>Practical</strong><span>Technology with a purpose.</span></div>
+<div class="fact"><strong>Built to grow</strong><span>Ready for the next version.</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="contact-box">
+<div><div class="section-kicker">04 / Start something</div><h2>Have an idea?<br><span>Let's build it.</span></h2><p>Tell us what you're trying to build, improve or launch. Start with a conversation and we'll work out the next step together.</p><div class="actions"><a class="btn btn-primary" href="https://wa.me/265892025111">Start on WhatsApp ↗</a><a class="btn btn-ghost" style="color:#ddd9d0" href="mailto:madalitsotambala2@gmail.com">Send an email</a></div></div>
+<div class="contact-links">
+<div class="contact-link"><small>Email</small><a href="mailto:madalitsotambala2@gmail.com">madalitsotambala2@gmail.com</a></div>
+<div class="contact-link"><small>Phone / WhatsApp</small><a href="tel:+265892025111">+265 892 025 111</a></div>
+<div class="contact-link"><small>Based in</small><strong>Malawi · Working digitally</strong></div>
+</div>
+</div>
+</section>
 </main>
-<footer><div class="foot"><span>© 2026 Tambala Technologies</span><span>Building ideas. Designing possibilities.</span></div></footer>
+
+<footer><div class="foot"><span>© 2026 Tambala Technologies</span><span>Design · Development · Digital solutions</span></div></footer>
 </div>
 </body>
 </html>
