@@ -3,230 +3,139 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Tambala Technologies — websites, digital products and technology solutions from Malawi.">
-<meta name="author" content="Tambala Technologies">
-<title>Tambala Technologies — Digital experiences that work.</title>
+<meta name="description" content="Tambala Technologies — digital products, websites and technology solutions built in Malawi.">
+<meta name="theme-color" content="#030914">
+<title>Tambala Technologies — We build what comes next.</title>
 <style>
-:root{
-  --bg:#0b0b0a;--surface:#121210;--surface2:#171714;--orange:#ff9f0a;--orange2:#ffb52e;
-  --text:#f5f2ea;--muted:#9b9890;--line:#292824;--max:1180px;--radius:28px
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
-a{text-decoration:none;color:inherit}
-button,input,textarea,select{font:inherit}
-.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
-.top{height:86px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.04em}
-.brand-mark{width:42px;height:42px;object-fit:contain;display:block;border-radius:10px}
-.brand span:last-child{font-size:17px}
-.nav{display:flex;align-items:center;gap:34px;color:#8e8c86;font-size:13px}
-.nav a:hover{color:#fff}
-.top-cta{background:#f4f1e9;color:#111;padding:12px 20px;border-radius:999px;font-size:12px;font-weight:800}
-.hero{padding:62px 0 110px;position:relative}
-.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:55px;align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#aaa79f;font-size:11px;text-transform:uppercase;letter-spacing:.14em;margin-bottom:24px}
-.eyebrow i{display:block;width:8px;height:8px;border-radius:50%;background:var(--orange)}
-.hero h1{font-size:clamp(58px,8.2vw,116px);line-height:.88;letter-spacing:-.075em;margin:0;max-width:800px}
-.hero h1 .orange{color:var(--orange)}
-.hero h1 .soft{color:#8c8981}
-.hero-copy{max-width:560px;color:#aaa79f;line-height:1.65;font-size:16px;margin:30px 0 30px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:999px;font-size:13px;font-weight:800;transition:.2s}
-.btn-primary{background:var(--orange);color:#111}
-.btn-primary:hover{background:var(--orange2);transform:translateY(-2px)}
-.btn-ghost{border:1px solid #383631;color:#ddd9d0}
-.btn-ghost:hover{border-color:#69655d}
-.hero-art{min-height:550px;border:1px solid #292824;border-radius:42px;background:radial-gradient(circle at 50% 42%,rgba(32,117,190,.28),transparent 42%),linear-gradient(145deg,#07111d,#02060b 72%);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:35px}
-.hero-art:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,rgba(65,181,232,.12),transparent 34%);pointer-events:none}
-.hero-art:after{content:"";position:absolute;width:72%;height:72%;border-radius:50%;border:1px solid rgba(57,181,232,.18);top:14%;left:14%;pointer-events:none}
-.brand-hero-logo{width:min(88%,520px);position:relative;z-index:2;filter:drop-shadow(0 22px 35px rgba(0,0,0,.45));transition:transform .35s ease}.hero-art:hover .brand-hero-logo{transform:scale(1.025)}
-.art-tag{position:absolute;z-index:4;background:#f4f1e9;color:#111;border-radius:999px;padding:11px 15px;font-size:11px;font-weight:850}
-.tag-one{left:22px;top:28px}.tag-two{right:22px;bottom:105px;background:var(--orange)}
-.orbit{position:absolute;width:120px;height:120px;border:1px dashed rgba(255,159,10,.5);border-radius:50%;z-index:3;right:48px;top:110px}
-.orbit b{position:absolute;right:-5px;top:50%;width:9px;height:9px;background:var(--orange);border-radius:50%}
-.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;color:#77746d;font-size:11px;text-transform:uppercase;letter-spacing:.16em}
-.trust-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.trust b{color:#b6b1a7;font-weight:700}
-.section{padding:120px 0}
-.section-head{display:flex;justify-content:space-between;gap:40px;align-items:flex-end;margin-bottom:42px}
-.section-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.15em;color:var(--orange);margin-bottom:14px}
-.section h2{font-size:clamp(42px,6vw,78px);letter-spacing:-.065em;line-height:.9;margin:0}
-.section-head p{max-width:390px;color:var(--muted);line-height:1.6;margin:0}
-.services{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px;min-height:250px;position:relative;transition:.25s}
-.service:hover{transform:translateY(-4px);border-color:#45423b}
-.service-no{color:var(--orange);font-size:11px;font-weight:800}
-.service h3{font-size:31px;letter-spacing:-.05em;margin:52px 0 10px}
-.service p{color:var(--muted);line-height:1.55;margin:0;max-width:430px}
-.service-arrow{position:absolute;right:25px;top:24px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#211f1a;color:var(--orange)}
-.work{display:grid;grid-template-columns:1.35fr .85fr;gap:16px}
-.card{border:1px solid var(--line);background:var(--surface);border-radius:32px;overflow:hidden;min-height:490px;position:relative}
-.card.small{min-height:237px}
-.card-visual{height:320px;margin:14px;border-radius:23px;background:#1b1a16;position:relative;overflow:hidden}
-.card:first-child .card-visual{background:linear-gradient(145deg,#f5efe1 0 31%,#191815 31% 100%)}
-.card:first-child .card-visual:after{content:"MALABI";position:absolute;left:25px;bottom:22px;font-size:48px;font-weight:950;letter-spacing:-.08em;color:#111}
-.card:nth-child(2) .card-visual{background:linear-gradient(145deg,#171713,#272016)}
-.card:nth-child(2) .card-visual:after{content:"PV";position:absolute;right:22px;bottom:-28px;font-size:190px;font-weight:950;color:rgba(255,159,10,.14)}
-.card:nth-child(3) .card-visual{background:linear-gradient(145deg,#1b1d1b,#10110f)}
-.card:nth-child(3) .card-visual:after{content:"DATA";position:absolute;left:20px;bottom:25px;font-size:44px;font-weight:900;color:#8f958d}
-.mock-ui{position:absolute;left:18%;right:18%;top:22%;bottom:18%;background:#0d0d0c;border:1px solid #444039;border-radius:16px;box-shadow:0 18px 40px #0008;padding:15px}
-.mock-ui span{display:block;width:55%;height:7px;border-radius:20px;background:#6b675e;margin:7px 0}
-.mock-ui span:nth-child(2){width:82%;height:24px;background:var(--orange)}
-.mock-ui span:nth-child(3){width:70%;background:#393731}
-.card-info{padding:8px 28px 28px;display:flex;justify-content:space-between;gap:20px}
-.card-info h3{font-size:25px;letter-spacing:-.04em;margin:0 0 5px}
-.card-info p{font-size:12px;color:#85827b;margin:0}
-.pill{align-self:start;border:1px solid #3b3933;border-radius:999px;padding:8px 11px;color:#aaa69e;font-size:10px;white-space:nowrap}
-.work-stack{display:grid;gap:16px}
-.statement{background:var(--orange);color:#111;border-radius:38px;padding:70px 7%;position:relative;overflow:hidden}
-.statement:after{content:"✦";position:absolute;right:4%;bottom:-40px;font-size:240px;opacity:.1}
-.statement p{font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:850;margin:0 0 20px}
-.statement h2{font-size:clamp(45px,7vw,94px);line-height:.86;letter-spacing:-.075em;max-width:1000px;margin:0}
-.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}
-.about-copy{font-size:19px;color:#b0aca3;line-height:1.6}
-.about-copy p{margin:0 0 28px}
-.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:40px}
-.fact{padding:20px 0;border-bottom:1px solid var(--line)}
-.fact strong{display:block;color:#f0ece3;font-size:15px}
-.fact span{display:block;color:#77746d;font-size:12px;margin-top:5px}
-.contact{padding-bottom:80px}
-.contact-box{background:var(--surface);border:1px solid var(--line);border-radius:38px;padding:65px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px}
-.contact-box h2{font-size:clamp(48px,7vw,88px);line-height:.86;letter-spacing:-.075em;margin:0 0 25px}
-.contact-box h2 span{color:var(--orange)}
-.contact-box p{color:var(--muted);max-width:520px;line-height:1.6}
-.contact-links{display:flex;flex-direction:column;justify-content:center;gap:15px}
-.contact-link{padding:18px 0;border-bottom:1px solid var(--line)}
-.contact-link small{display:block;color:#77746d;text-transform:uppercase;letter-spacing:.12em;font-size:9px;margin-bottom:5px}
-.contact-link a,.contact-link strong{font-size:16px}
-footer{border-top:1px solid var(--line);padding:28px 0;color:#6f6c65;font-size:10px;text-transform:uppercase;letter-spacing:.12em}
-.foot{display:flex;justify-content:space-between;gap:20px}
-@media(max-width:850px){
- .wrap{width:min(calc(100% - 24px),var(--max))}
- .nav{display:none}
- .top{height:74px}
- .hero{padding:45px 0 70px}
- .hero-grid{grid-template-columns:1fr}
- .hero-art{min-height:430px}
- .hero h1{font-size:clamp(58px,15vw,95px)}
- .section{padding:85px 0}
- .section-head{display:block}.section-head p{margin-top:22px}
- .services,.work,.about,.contact-box{grid-template-columns:1fr}
- .work-stack{grid-template-columns:1fr 1fr}
- .card,.card.small{min-height:370px}
- .card.small .card-visual{height:210px}
- .card-visual{height:245px}
- .contact-box{padding:40px 28px}
- .statement{border-radius:28px;padding:50px 28px}
- .foot{display:block}.foot span{display:block;margin:8px 0}
-}
-@media(max-width:560px){
- .top-cta{padding:10px 14px}
- .brand span:last-child{font-size:15px}
- .hero-art{min-height:380px;border-radius:28px}
- .services{grid-template-columns:1fr}
- .service{min-height:220px}
- .work-stack{grid-template-columns:1fr}
- .card,.card.small{min-height:400px}
- .card.small .card-visual,.card-visual{height:260px}
- .trust-row{display:grid;grid-template-columns:1fr 1fr}
-}
+:root{--bg:#030914;--bg2:#071321;--panel:#091725;--blue:#2f68ee;--cyan:#39b7e9;--white:#f7fbff;--muted:#8c9bab;--line:rgba(144,181,211,.15);--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(to bottom,black,transparent 72%);z-index:-2}
+body:after{content:"";position:fixed;width:55vw;height:55vw;right:-25vw;top:-25vw;background:radial-gradient(circle,rgba(42,112,230,.18),transparent 68%);pointer-events:none;z-index:-1}
+a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}.wrap{width:min(calc(100% - 42px),var(--max));margin:auto}
+.top{height:88px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:10}
+.brand img{width:45px;height:45px;display:block;object-fit:contain}.brand{display:flex;align-items:center}
+.nav{display:flex;gap:34px;color:#9ba8b7;font-size:13px}.nav a{transition:.2s}.nav a:hover{color:#fff}
+.nav-cta{border:1px solid rgba(108,180,232,.35);padding:11px 18px;border-radius:999px;font-size:12px;font-weight:800;background:rgba(8,23,37,.65);backdrop-filter:blur(10px)}
+.hero{min-height:calc(100vh - 88px);display:flex;align-items:center;padding:55px 0 110px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;width:100%}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:#9db0c2;text-transform:uppercase;letter-spacing:.18em;font-size:10px;margin-bottom:24px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 22px var(--cyan)}
+h1{font-size:clamp(58px,8vw,112px);line-height:.88;letter-spacing:-.075em;margin:0;max-width:760px}
+h1 .blue{color:var(--blue)}h1 .cyan{color:var(--cyan)}
+.hero-copy{max-width:590px;color:var(--muted);font-size:17px;line-height:1.7;margin:30px 0 32px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 21px;border-radius:999px;font-size:12px;font-weight:850;transition:.25s}
+.primary{background:linear-gradient(100deg,var(--blue),var(--cyan));color:#fff;box-shadow:0 12px 40px rgba(42,117,230,.22)}.primary:hover{transform:translateY(-3px);box-shadow:0 18px 48px rgba(42,117,230,.35)}
+.secondary{border:1px solid var(--line);color:#dce7f1;background:rgba(255,255,255,.025)}.secondary:hover{border-color:rgba(91,190,238,.5);transform:translateY(-2px)}
+.hero-visual{position:relative;min-height:560px;display:grid;place-items:center}
+.hero-visual:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle,rgba(49,180,234,.22),rgba(39,98,231,.09) 38%,transparent 68%);filter:blur(8px)}
+.hero-visual:after{content:"";position:absolute;width:390px;height:390px;border:1px solid rgba(80,175,229,.16);border-radius:50%;box-shadow:0 0 80px rgba(43,116,223,.12),inset 0 0 80px rgba(43,116,223,.06)}
+.hero-logo{width:min(90%,500px);position:relative;z-index:2;filter:drop-shadow(0 30px 45px rgba(0,0,0,.45));animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.float-chip{position:absolute;z-index:4;padding:10px 14px;border:1px solid var(--line);background:rgba(6,19,31,.78);backdrop-filter:blur(12px);border-radius:999px;color:#d7e5f1;font-size:10px;font-weight:750;box-shadow:0 12px 30px #0005}.chip-a{top:12%;left:3%}.chip-b{right:1%;bottom:18%;color:#8ee3ff;border-color:rgba(57,183,233,.25)}
+.scroll-note{position:absolute;bottom:28px;left:0;display:flex;align-items:center;gap:12px;color:#667687;font-size:9px;text-transform:uppercase;letter-spacing:.16em}.scroll-note span{display:block;width:45px;height:1px;background:#334557}
+.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;color:#718192;font-size:10px;text-transform:uppercase;letter-spacing:.17em}
+.band-row{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}.band b{color:#c4d0dc;margin-right:7px}
+.section{padding:125px 0}.kicker{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:var(--cyan);margin-bottom:15px}
+.section-head{display:flex;justify-content:space-between;gap:50px;align-items:end;margin-bottom:48px}.section h2{font-size:clamp(43px,6.5vw,82px);line-height:.9;letter-spacing:-.07em;margin:0}.section-head p{max-width:410px;color:var(--muted);line-height:1.65;margin:0}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.service{min-height:315px;padding:27px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,rgba(13,31,48,.82),rgba(5,15,25,.72));position:relative;overflow:hidden;transition:.3s}
+.service:before{content:"";position:absolute;width:160px;height:160px;border-radius:50%;right:-80px;bottom:-80px;background:radial-gradient(circle,rgba(49,180,234,.22),transparent 68%);transition:.35s}.service:hover{transform:translateY(-7px);border-color:rgba(62,167,226,.35)}.service:hover:before{transform:scale(1.5)}
+.num{font-size:10px;color:#5f7183}.icon{position:absolute;right:22px;top:20px;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--cyan)}.service h3{font-size:25px;letter-spacing:-.045em;margin:90px 0 13px}.service p{color:#7f8e9e;font-size:12px;line-height:1.6;margin:0}
+.work-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}.project{border:1px solid var(--line);border-radius:30px;background:#07111d;overflow:hidden;position:relative}.project-main{min-height:555px}.project-side{min-height:270px}
+.project-visual{position:absolute;inset:0;background:radial-gradient(circle at 70% 35%,rgba(55,185,235,.22),transparent 26%),linear-gradient(145deg,#0c2235,#040b13 70%)}.project-visual:after{content:"";position:absolute;inset:13%;border:1px solid rgba(110,185,225,.15);border-radius:22px;box-shadow:0 25px 70px #0007}
+.project-ui{position:absolute;z-index:2;left:13%;right:13%;top:18%;bottom:16%;background:#06101a;border:1px solid rgba(151,198,226,.2);border-radius:18px;box-shadow:0 35px 70px #0008;padding:22px}.project-ui .bar{height:8px;width:42%;background:#476074;border-radius:20px;margin-bottom:18px}.project-ui .hero-line{width:76%;height:48px;background:linear-gradient(90deg,#2e69eb,#38b7e8);border-radius:10px;margin-bottom:12px}.project-ui .line{height:7px;width:65%;background:#263c4d;border-radius:20px;margin:8px 0}.project-ui .line.short{width:38%}
+.project-copy{position:absolute;z-index:3;left:28px;right:28px;bottom:25px;display:flex;justify-content:space-between;align-items:end;gap:20px}.project-copy h3{font-size:29px;letter-spacing:-.05em;margin:0 0 5px}.project-copy p{margin:0;color:#8ea0b0;font-size:11px}.tag{padding:8px 11px;border-radius:999px;border:1px solid var(--line);font-size:9px;color:#b8c9d7;background:#07131fe8;white-space:nowrap}
+.project-side .project-visual{background:radial-gradient(circle at 30% 35%,rgba(46,104,238,.28),transparent 28%),linear-gradient(145deg,#0b1b2a,#040b12)}.project-side .project-copy{bottom:22px}.project-side .project-copy h3{font-size:23px}
+.project-side.top{min-height:270px}.project-side.bottom{min-height:270px}
+.principle{position:relative;border-radius:38px;overflow:hidden;padding:85px 8%;background:linear-gradient(125deg,#2b61dc,#2e9fda 65%,#49c4ea);color:#fff}.principle:after{content:"T";position:absolute;right:-25px;bottom:-120px;font-size:430px;font-weight:950;line-height:1;color:rgba(255,255,255,.08)}.principle p{font-size:10px;text-transform:uppercase;letter-spacing:.18em;margin:0 0 22px}.principle h2{font-size:clamp(48px,7vw,96px);line-height:.87;letter-spacing:-.075em;max-width:1000px;margin:0;position:relative;z-index:1}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px}.about-copy{color:#a2afbd;font-size:18px;line-height:1.7}.about-copy p{margin:0 0 28px}.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:42px}.fact{padding:20px 0;border-bottom:1px solid var(--line)}.fact strong{font-size:14px;color:#e9f1f7}.fact span{display:block;color:#68798a;font-size:11px;margin-top:5px}
+.cta{padding-bottom:85px}.cta-box{border:1px solid rgba(83,175,230,.2);border-radius:36px;padding:70px;background:radial-gradient(circle at 75% 20%,rgba(48,144,220,.18),transparent 35%),#07121f;display:flex;justify-content:space-between;gap:50px;align-items:end}.cta-box h2{font-size:clamp(50px,7vw,92px);line-height:.86;letter-spacing:-.075em;margin:0 0 20px}.cta-box h2 span{color:var(--cyan)}.cta-box p{max-width:520px;color:var(--muted);line-height:1.65;margin:0}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#647383;font-size:9px;text-transform:uppercase;letter-spacing:.14em}.foot{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:900px){.nav{display:none}.hero{padding-top:30px}.hero-grid{grid-template-columns:1fr}.hero-visual{min-height:450px}.services{grid-template-columns:1fr 1fr}.work-grid{grid-template-columns:1fr}.project-main{min-height:500px}.about{grid-template-columns:1fr}.cta-box{display:block;padding:48px 32px}.cta-box .actions{margin-top:30px}}
+@media(max-width:560px){.wrap{width:min(calc(100% - 24px),var(--max))}.top{height:72px}.brand img{width:42px;height:42px}.nav-cta{padding:10px 14px}.hero{min-height:auto;padding:55px 0 85px}.hero h1{font-size:clamp(55px,16vw,82px)}.hero-copy{font-size:15px}.hero-visual{min-height:360px}.hero-visual:before{width:310px;height:310px}.hero-visual:after{width:285px;height:285px}.hero-logo{width:92%}.chip-a{left:0}.chip-b{right:0}.scroll-note{display:none}.band-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}.section{padding:88px 0}.section-head{display:block}.section-head p{margin-top:20px}.services{grid-template-columns:1fr}.service{min-height:245px}.work-grid{display:grid}.project-main{min-height:440px}.project-side{min-height:220px}.project-ui{left:9%;right:9%;top:14%;bottom:19%}.project-copy{left:20px;right:20px}.project-copy h3{font-size:23px}.tag{display:none}.principle{padding:55px 28px;border-radius:28px}.principle h2{font-size:clamp(44px,13vw,65px)}.facts{grid-template-columns:1fr}.cta-box{border-radius:28px}.foot{display:block}.foot span{display:block;margin:8px 0}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="top">
-<a class="brand" href="#"><img class="brand-mark" src="assets/tambala-logo.svg" alt="Tambala Technologies logo"><span>Tambala Technologies</span></a>
-<nav class="nav"><a href="#services">Services</a><a href="#work">Work</a><a href="#studio">Studio</a></nav>
-<a class="top-cta" href="#contact">Let's talk ↗</a>
+<a class="brand" href="#" aria-label="Tambala Technologies home"><img src="assets/tambala-logo.svg" alt="Tambala Technologies"></a>
+<nav class="nav" aria-label="Main navigation"><a href="#services">What we build</a><a href="#work">Work</a><a href="#studio">About</a></nav>
+<a class="nav-cta" href="#contact">Start a project ↗</a>
 </header>
 
 <main>
 <section class="hero">
 <div class="hero-grid">
 <div>
-<div class="eyebrow"><i></i> Digital studio · Malawi</div>
-<h1>We turn <span class="orange">ideas</span> into digital <span class="soft">experiences.</span></h1>
-<p class="hero-copy">Tambala Technologies designs and builds websites, digital products and practical technology for businesses and people with something worth building.</p>
-<div class="actions"><a class="btn btn-primary" href="#work">Explore our work ↗</a><a class="btn btn-ghost" href="#contact">Start a project</a></div>
+<div class="eyebrow"><i></i> Independent digital studio · Malawi</div>
+<h1>We build what <span class="blue">comes</span> <span class="cyan">next.</span></h1>
+<p class="hero-copy">Tambala Technologies turns ideas into websites, digital products and practical technology that people can actually use.</p>
+<div class="actions"><a class="btn primary" href="#contact">Start a project ↗</a><a class="btn secondary" href="#work">See what we've built</a></div>
 </div>
-<div class="hero-art">
-<div class="art-tag tag-one">Our identity</div>
-<img class="brand-hero-logo" src="assets/tambala-logo.svg" alt="Tambala Technologies official logo">
-<div class="art-tag tag-two">Built in Malawi ✦</div>
+<div class="hero-visual">
+<div class="float-chip chip-a">Design + Development</div>
+<img class="hero-logo" src="assets/tambala-logo.svg" alt="Tambala Technologies logo">
+<div class="float-chip chip-b">Built in Malawi · Available worldwide</div>
 </div>
 </div>
+<div class="scroll-note"><span></span> Scroll to explore</div>
 </section>
 
-<div class="trust"><div class="trust-row"><span><b>01</b> Web experiences</span><span><b>02</b> Digital products</span><span><b>03</b> Business systems</span><span><b>04</b> Visual identity</span></div></div>
+<div class="band"><div class="band-row"><span><b>01</b> Websites</span><span><b>02</b> Digital products</span><span><b>03</b> Business systems</span><span><b>04</b> Brand & visual design</span></div></div>
 
 <section class="section" id="services">
-<div class="section-head"><div><div class="section-kicker">01 / What we do</div><h2>Ideas, designed<br>to <span style="color:var(--orange)">work.</span></h2></div><p>We combine strategy, visual design and development to make digital work that looks good and does something useful.</p></div>
+<div class="section-head"><div><div class="kicker">01 / What we build</div><h2>Digital work<br>with a <span style="color:var(--cyan)">purpose.</span></h2></div><p>From a business website to a custom digital product, we combine design and development around the problem that needs solving.</p></div>
 <div class="services">
-<article class="service"><span class="service-no">01</span><span class="service-arrow">↗</span><h3>Website Design</h3><p>Modern, responsive websites that help businesses look credible, communicate clearly and turn visitors into enquiries.</p></article>
-<article class="service"><span class="service-no">02</span><span class="service-arrow">↗</span><h3>Digital Products</h3><p>Product interfaces and web applications shaped around real users, real workflows and real problems.</p></article>
-<article class="service"><span class="service-no">03</span><span class="service-arrow">↗</span><h3>Business Systems</h3><p>Focused digital tools that simplify repetitive work, organize information and create better customer experiences.</p></article>
-<article class="service"><span class="service-no">04</span><span class="service-arrow">↗</span><h3>Brand & Visuals</h3><p>Distinct visual direction for businesses that want to be remembered before they are compared.</p></article>
+<article class="service"><span class="num">01 / WEB</span><span class="icon">↗</span><h3>Websites</h3><p>Fast, responsive and conversion-focused websites that make businesses easier to trust and easier to find.</p></article>
+<article class="service"><span class="num">02 / PRODUCT</span><span class="icon">✦</span><h3>Digital Products</h3><p>Interfaces and web applications shaped around users, workflows and the experience your product needs.</p></article>
+<article class="service"><span class="num">03 / SYSTEMS</span><span class="icon">⌁</span><h3>Business Systems</h3><p>Purpose-built tools that organize information, reduce repetitive work and make operations easier.</p></article>
+<article class="service"><span class="num">04 / VISUAL</span><span class="icon">◇</span><h3>Brand & Visuals</h3><p>Distinct visual direction that gives your business a recognizable presence across digital touchpoints.</p></article>
 </div>
 </section>
 
 <section class="section" id="work">
-<div class="section-head"><div><div class="section-kicker">02 / Selected work</div><h2>Built for<br>real <span style="color:var(--orange)">people.</span></h2></div><p>A growing body of work across hospitality, fintech, education and business technology.</p></div>
-<div class="work">
-<article class="card">
-<div class="card-visual"><div class="mock-ui"><span></span><span></span><span></span><span style="width:42%;height:7px;background:#555149"></span></div></div>
-<div class="card-info"><div><h3>Malabi Guest House</h3><p>Hospitality · Website</p></div><span class="pill">Live project</span></div>
+<div class="section-head"><div><div class="kicker">02 / Selected work</div><h2>Things we're<br><span style="color:var(--blue)">building.</span></h2></div><p>A selection of projects and products from Tambala Technologies — across hospitality, fintech, education and business technology.</p></div>
+<div class="work-grid">
+<article class="project project-main">
+<div class="project-visual"></div><div class="project-ui"><div class="bar"></div><div class="hero-line"></div><div class="line"></div><div class="line short"></div></div>
+<div class="project-copy"><div><h3>Malabi Guest House</h3><p>Hospitality · Website design & development</p></div><span class="tag">Client project</span></div>
 </article>
-<div class="work-stack">
-<article class="card small">
-<div class="card-visual"><div class="mock-ui"><span></span><span></span><span></span></div></div>
-<div class="card-info"><div><h3>PocketVault</h3><p>Fintech · Product</p></div><span class="pill">Building</span></div>
-</article>
-<article class="card small">
-<div class="card-visual"></div>
-<div class="card-info"><div><h3>Health Science Allocation</h3><p>Education · System</p></div><span class="pill">Concept</span></div>
-</article>
+<div style="display:grid;gap:14px">
+<article class="project project-side top"><div class="project-visual"></div><div class="project-copy"><div><h3>PocketVault</h3><p>Fintech · Digital product</p></div><span class="tag">In progress</span></div></article>
+<article class="project project-side bottom"><div class="project-visual" style="background:radial-gradient(circle at 72% 35%,rgba(57,183,233,.2),transparent 25%),linear-gradient(145deg,#0a1722,#03090e)"></div><div class="project-copy"><div><h3>Health Science Allocation</h3><p>Education · Business system</p></div><span class="tag">Concept</span></div></article>
 </div>
 </div>
 </section>
 
 <section class="section">
-<div class="statement">
-<p>The Tambala approach</p>
-<h2>Don't build digital things just to have them. Build something people <span style="color:#fff">actually use.</span></h2>
-</div>
+<div class="principle"><p>The Tambala principle</p><h2>Good technology isn't just impressive. <span>It's useful.</span></h2></div>
 </section>
 
 <section class="section" id="studio">
 <div class="about">
-<div><div class="section-kicker">03 / The studio</div><h2>Small studio.<br><span style="color:var(--orange)">Serious</span><br>attention.</h2></div>
+<div><div class="kicker">03 / The studio</div><h2>Small team.<br><span style="color:var(--cyan)">Big attention</span><br>to detail.</h2></div>
 <div class="about-copy">
-<p>Tambala Technologies is an independent digital studio from Malawi. We bring design, development and problem-solving together to create useful digital experiences.</p>
-<p>From the first idea to the final interaction, we care about the details people notice — and the ones they don't.</p>
+<p>Tambala Technologies is an independent digital studio from Malawi. We design and build digital experiences for businesses, ideas and products that deserve to move forward.</p>
+<p>We keep the process close: understand the problem, shape the experience, build it properly, then keep improving it.</p>
 <div class="facts">
-<div class="fact"><strong>Human-first</strong><span>Built around real people.</span></div>
-<div class="fact"><strong>Mobile-ready</strong><span>Designed for everyday devices.</span></div>
-<div class="fact"><strong>Practical</strong><span>Technology with a purpose.</span></div>
-<div class="fact"><strong>Built to grow</strong><span>Ready for the next version.</span></div>
+<div class="fact"><strong>Human-first</strong><span>Designed around real people and real behavior.</span></div>
+<div class="fact"><strong>Mobile-ready</strong><span>Built for the devices people actually use.</span></div>
+<div class="fact"><strong>Practical</strong><span>Technology should solve something.</span></div>
+<div class="fact"><strong>Built to grow</strong><span>Good foundations make the next version easier.</span></div>
 </div>
 </div>
 </div>
 </section>
 
-<section class="contact" id="contact">
-<div class="contact-box">
-<div><div class="section-kicker">04 / Start something</div><h2>Have an idea?<br><span>Let's build it.</span></h2><p>Tell us what you're trying to build, improve or launch. Start with a conversation and we'll work out the next step together.</p><div class="actions"><a class="btn btn-primary" href="https://wa.me/265892025111">Start on WhatsApp ↗</a><a class="btn btn-ghost" style="color:#ddd9d0" href="mailto:madalitsotambala2@gmail.com">Send an email</a></div></div>
-<div class="contact-links">
-<div class="contact-link"><small>Email</small><a href="mailto:madalitsotambala2@gmail.com">madalitsotambala2@gmail.com</a></div>
-<div class="contact-link"><small>Phone / WhatsApp</small><a href="tel:+265892025111">+265 892 025 111</a></div>
-<div class="contact-link"><small>Based in</small><strong>Malawi · Working digitally</strong></div>
-</div>
+<section class="cta" id="contact">
+<div class="cta-box">
+<div><div class="kicker">04 / Start something</div><h2>Have an idea?<br><span>Let's build it.</span></h2><p>Tell us what you're trying to build, improve or launch. Start with a conversation and we'll figure out the right next step.</p></div>
+<div class="actions"><a class="btn primary" href="https://wa.me/265892025111">Talk on WhatsApp ↗</a><a class="btn secondary" href="mailto:madalitsotambala2@gmail.com">Send an email</a></div>
 </div>
 </section>
 </main>
 
-<footer><div class="foot"><span>© 2026 Tambala Technologies</span><span>Design · Development · Digital solutions</span></div></footer>
+<footer><div class="foot"><span>© 2026 Tambala Technologies</span><span>Malawi · Design · Development · Digital solutions</span></div></footer>
 </div>
 </body>
 </html>
