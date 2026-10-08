@@ -3,141 +3,117 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Tambala Technologies — digital products, websites and technology solutions built in Malawi.">
-<meta name="theme-color" content="#030914">
-<title>Tambala Technologies — We build what comes next.</title>
+<meta name="description" content="Tambala Technologies builds websites, software and digital products from Malawi — including PocketVault, Tambala Pay and Tambala Email.">
+<meta name="theme-color" content="#050b14">
+<title>Tambala Technologies — Technology built for real life.</title>
 <style>
-:root{--bg:#030914;--bg2:#071321;--panel:#091725;--blue:#2f68ee;--cyan:#39b7e9;--white:#f7fbff;--muted:#8c9bab;--line:rgba(144,181,211,.15);--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(to bottom,black,transparent 72%);z-index:-2}
-body:after{content:"";position:fixed;width:55vw;height:55vw;right:-25vw;top:-25vw;background:radial-gradient(circle,rgba(42,112,230,.18),transparent 68%);pointer-events:none;z-index:-1}
-a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}.wrap{width:min(calc(100% - 42px),var(--max));margin:auto}
-.top{height:88px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:10}
-.brand img{width:45px;height:45px;display:block;object-fit:contain}.brand{display:flex;align-items:center}
-.nav{display:flex;gap:34px;color:#9ba8b7;font-size:13px}.nav a{transition:.2s}.nav a:hover{color:#fff}
-.nav-cta{border:1px solid rgba(108,180,232,.35);padding:11px 18px;border-radius:999px;font-size:12px;font-weight:800;background:rgba(8,23,37,.65);backdrop-filter:blur(10px)}
-.hero{min-height:calc(100vh - 88px);display:flex;align-items:center;padding:45px 0 85px;position:relative;overflow:hidden}
-.hero-grid{display:block;width:100%}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;color:#9db0c2;text-transform:uppercase;letter-spacing:.18em;font-size:10px;margin-bottom:24px}
-.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 22px var(--cyan)}
-h1{font-size:clamp(58px,8vw,112px);line-height:.88;letter-spacing:-.075em;margin:0;max-width:760px}
-h1 .blue{color:var(--blue)}h1 .cyan{color:var(--cyan)}
-.hero-copy{max-width:590px;color:var(--muted);font-size:17px;line-height:1.7;margin:30px 0 32px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 21px;border-radius:999px;font-size:12px;font-weight:850;transition:.25s}
-.primary{background:linear-gradient(100deg,var(--blue),var(--cyan));color:#fff;box-shadow:0 12px 40px rgba(42,117,230,.22)}.primary:hover{transform:translateY(-3px);box-shadow:0 18px 48px rgba(42,117,230,.35)}
-.secondary{border:1px solid var(--line);color:#dce7f1;background:rgba(255,255,255,.025)}.secondary:hover{border-color:rgba(91,190,238,.5);transform:translateY(-2px)}
-.hero-visual{position:absolute;inset:-12% -8%;display:grid;place-items:center;z-index:0;pointer-events:none}
-.hero-visual:before{content:"";position:absolute;width:min(75vw,900px);height:min(75vw,900px);border-radius:50%;background:radial-gradient(circle,rgba(49,180,234,.22),rgba(39,98,231,.10) 38%,transparent 70%);filter:blur(18px)}
-.hero-visual:after{content:"";position:absolute;width:min(62vw,760px);height:min(62vw,760px);border:1px solid rgba(80,175,229,.16);border-radius:50%;box-shadow:0 0 120px rgba(43,116,223,.12),inset 0 0 100px rgba(43,116,223,.06);animation:orbit 18s linear infinite}
-.hero-logo{width:min(78vw,820px);position:relative;z-index:2;opacity:.78;filter:drop-shadow(0 35px 60px rgba(0,0,0,.55));animation:logoFloat 8s ease-in-out infinite}
-@keyframes logoFloat{0%,100%{transform:translate3d(-2%,0,0) rotate(-1deg) scale(1)}50%{transform:translate3d(2%,-18px,0) rotate(1deg) scale(1.035)}}
-@keyframes orbit{to{transform:rotate(360deg)}}
-.hero > .hero-grid > div:first-child{position:relative;z-index:3;max-width:780px}
-.float-chip{position:absolute;z-index:4;padding:10px 14px;border:1px solid var(--line);background:rgba(6,19,31,.78);backdrop-filter:blur(12px);border-radius:999px;color:#d7e5f1;font-size:10px;font-weight:750;box-shadow:0 12px 30px #0005}.chip-a{top:12%;left:3%}.chip-b{right:1%;bottom:18%;color:#8ee3ff;border-color:rgba(57,183,233,.25)}
-.scroll-note{position:absolute;bottom:28px;left:0;display:flex;align-items:center;gap:12px;color:#667687;font-size:9px;text-transform:uppercase;letter-spacing:.16em}.scroll-note span{display:block;width:45px;height:1px;background:#334557}
-.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;color:#718192;font-size:10px;text-transform:uppercase;letter-spacing:.17em}
-.band-row{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}.band b{color:#c4d0dc;margin-right:7px}
-.section{padding:125px 0}.kicker{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:var(--cyan);margin-bottom:15px}
-.section-head{display:flex;justify-content:space-between;gap:50px;align-items:end;margin-bottom:48px}.section h2{font-size:clamp(43px,6.5vw,82px);line-height:.9;letter-spacing:-.07em;margin:0}.section-head p{max-width:410px;color:var(--muted);line-height:1.65;margin:0}
-.services{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.service{min-height:315px;padding:27px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,rgba(13,31,48,.82),rgba(5,15,25,.72));position:relative;overflow:hidden;transition:.3s}
-.service:before{content:"";position:absolute;width:160px;height:160px;border-radius:50%;right:-80px;bottom:-80px;background:radial-gradient(circle,rgba(49,180,234,.22),transparent 68%);transition:.35s}.service:hover{transform:translateY(-7px);border-color:rgba(62,167,226,.35)}.service:hover:before{transform:scale(1.5)}
-.num{font-size:10px;color:#5f7183}.icon{position:absolute;right:22px;top:20px;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--cyan)}.service h3{font-size:25px;letter-spacing:-.045em;margin:90px 0 13px}.service p{color:#7f8e9e;font-size:12px;line-height:1.6;margin:0}
-.work-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}.project{border:1px solid var(--line);border-radius:30px;background:#07111d;overflow:hidden;position:relative}.project-main{min-height:555px}.project-side{min-height:270px}
-.project-visual{position:absolute;inset:0;background:radial-gradient(circle at 70% 35%,rgba(55,185,235,.22),transparent 26%),linear-gradient(145deg,#0c2235,#040b13 70%)}.project-visual:after{content:"";position:absolute;inset:13%;border:1px solid rgba(110,185,225,.15);border-radius:22px;box-shadow:0 25px 70px #0007}
-.project-ui{position:absolute;z-index:2;left:13%;right:13%;top:18%;bottom:16%;background:#06101a;border:1px solid rgba(151,198,226,.2);border-radius:18px;box-shadow:0 35px 70px #0008;padding:22px}.project-ui .bar{height:8px;width:42%;background:#476074;border-radius:20px;margin-bottom:18px}.project-ui .hero-line{width:76%;height:48px;background:linear-gradient(90deg,#2e69eb,#38b7e8);border-radius:10px;margin-bottom:12px}.project-ui .line{height:7px;width:65%;background:#263c4d;border-radius:20px;margin:8px 0}.project-ui .line.short{width:38%}
-.project-copy{position:absolute;z-index:3;left:28px;right:28px;bottom:25px;display:flex;justify-content:space-between;align-items:end;gap:20px}.project-copy h3{font-size:29px;letter-spacing:-.05em;margin:0 0 5px}.project-copy p{margin:0;color:#8ea0b0;font-size:11px}.tag{padding:8px 11px;border-radius:999px;border:1px solid var(--line);font-size:9px;color:#b8c9d7;background:#07131fe8;white-space:nowrap}
-.project-side .project-visual{background:radial-gradient(circle at 30% 35%,rgba(46,104,238,.28),transparent 28%),linear-gradient(145deg,#0b1b2a,#040b12)}.project-side .project-copy{bottom:22px}.project-side .project-copy h3{font-size:23px}
-.project-side.top{min-height:270px}.project-side.bottom{min-height:270px}
-.principle{position:relative;border-radius:38px;overflow:hidden;padding:85px 8%;background:linear-gradient(125deg,#2b61dc,#2e9fda 65%,#49c4ea);color:#fff}.principle:after{content:"T";position:absolute;right:-25px;bottom:-120px;font-size:430px;font-weight:950;line-height:1;color:rgba(255,255,255,.08)}.principle p{font-size:10px;text-transform:uppercase;letter-spacing:.18em;margin:0 0 22px}.principle h2{font-size:clamp(48px,7vw,96px);line-height:.87;letter-spacing:-.075em;max-width:1000px;margin:0;position:relative;z-index:1}
-.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px}.about-copy{color:#a2afbd;font-size:18px;line-height:1.7}.about-copy p{margin:0 0 28px}.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:42px}.fact{padding:20px 0;border-bottom:1px solid var(--line)}.fact strong{font-size:14px;color:#e9f1f7}.fact span{display:block;color:#68798a;font-size:11px;margin-top:5px}
-.cta{padding-bottom:85px}.cta-box{border:1px solid rgba(83,175,230,.2);border-radius:36px;padding:70px;background:radial-gradient(circle at 75% 20%,rgba(48,144,220,.18),transparent 35%),#07121f;display:flex;justify-content:space-between;gap:50px;align-items:end}.cta-box h2{font-size:clamp(50px,7vw,92px);line-height:.86;letter-spacing:-.075em;margin:0 0 20px}.cta-box h2 span{color:var(--cyan)}.cta-box p{max-width:520px;color:var(--muted);line-height:1.65;margin:0}
-footer{border-top:1px solid var(--line);padding:28px 0;color:#647383;font-size:9px;text-transform:uppercase;letter-spacing:.14em}.foot{display:flex;justify-content:space-between;gap:20px}
-@media(max-width:900px){.nav{display:none}.hero{padding-top:30px}.hero-visual{inset:-5% -15%}.hero-logo{width:min(105vw,700px);opacity:.62}.services{grid-template-columns:1fr 1fr}.work-grid{grid-template-columns:1fr}.project-main{min-height:500px}.about{grid-template-columns:1fr}.cta-box{display:block;padding:48px 32px}.cta-box .actions{margin-top:30px}}
-@media(max-width:560px){.wrap{width:min(calc(100% - 24px),var(--max))}.top{height:72px}.brand img{width:42px;height:42px}.nav-cta{padding:10px 14px}.hero{min-height:calc(100svh - 72px);padding:55px 0 85px}.hero-visual{inset:0 -30%}.hero-logo{width:125vw;opacity:.55}.hero-visual:after{width:90vw;height:90vw}.hero-visual:before{width:105vw;height:105vw}.chip-a{top:13%;left:0}.chip-b{right:0;bottom:16%}.hero h1{font-size:clamp(55px,16vw,82px)}.hero-copy{font-size:15px}.hero-visual{min-height:360px}.hero-visual:before{width:310px;height:310px}.hero-visual:after{width:285px;height:285px}.hero-logo{width:92%}.chip-a{left:0}.chip-b{right:0}.scroll-note{display:none}.band-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}.section{padding:88px 0}.section-head{display:block}.section-head p{margin-top:20px}.services{grid-template-columns:1fr}.service{min-height:245px}.work-grid{display:grid}.project-main{min-height:440px}.project-side{min-height:220px}.project-ui{left:9%;right:9%;top:14%;bottom:19%}.project-copy{left:20px;right:20px}.project-copy h3{font-size:23px}.tag{display:none}.principle{padding:55px 28px;border-radius:28px}.principle h2{font-size:clamp(44px,13vw,65px)}.facts{grid-template-columns:1fr}.cta-box{border-radius:28px}.foot{display:block}.foot span{display:block;margin:8px 0}}
+:root{--bg:#050a12;--bg2:#07111d;--card:#0a1725;--card2:#0c1b2b;--text:#f3f7fb;--muted:#8998a9;--blue:#2875ed;--cyan:#37b7e8;--line:rgba(149,184,214,.14);--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 80% 8%,rgba(39,117,237,.18),transparent 27%),radial-gradient(circle at 15% 40%,rgba(55,183,232,.07),transparent 24%),linear-gradient(rgba(255,255,255,.016) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.016) 1px,transparent 1px);background-size:auto,auto,72px 72px,72px 72px;mask-image:linear-gradient(to bottom,#000 0,#000 65%,transparent 100%)}
+a{text-decoration:none;color:inherit}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:10}.brand img{width:47px;height:47px;object-fit:contain}.nav{display:flex;gap:30px;color:#91a0b1;font-size:12px}.nav a:hover{color:#fff}.nav-cta{padding:11px 17px;border:1px solid rgba(70,174,230,.32);border-radius:999px;background:#091523;font-size:11px;font-weight:800}
+.hero{min-height:calc(100svh - 82px);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:30px;padding:48px 0 95px;position:relative}.eyebrow{display:inline-flex;gap:9px;align-items:center;padding:8px 11px;border:1px solid rgba(68,166,225,.22);border-radius:999px;background:rgba(9,25,40,.7);color:#9eb1c2;font-size:10px}.dot{width:6px;height:6px;background:var(--cyan);border-radius:50%;box-shadow:0 0 15px var(--cyan)}
+h1{font-size:clamp(54px,7vw,92px);line-height:.9;letter-spacing:-.075em;max-width:720px;margin:24px 0}.blue{color:var(--blue)}.cyan{color:var(--cyan)}.hero p{max-width:575px;color:var(--muted);font-size:16px;line-height:1.7;margin:0 0 28px}.actions{display:flex;gap:11px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 19px;border-radius:10px;font-size:11px;font-weight:850;transition:.2s}.primary{background:linear-gradient(100deg,#2464e4,#35b9e9);box-shadow:0 15px 40px rgba(36,113,225,.2)}.primary:hover{transform:translateY(-2px)}.secondary{border:1px solid var(--line);background:#08121e;color:#d8e2eb}.secondary:hover{border-color:rgba(55,183,232,.45)}
+.hero-art{min-height:510px;position:relative;display:grid;place-items:center}.orb{position:absolute;width:390px;height:390px;border-radius:50%;background:radial-gradient(circle,rgba(48,178,232,.2),rgba(39,103,231,.08) 42%,transparent 70%);filter:blur(5px)}.ring{position:absolute;width:360px;height:360px;border:1px solid rgba(67,171,225,.18);border-radius:50%;box-shadow:0 0 90px rgba(38,107,224,.12),inset 0 0 80px rgba(38,107,224,.06);animation:spin 18s linear infinite}.logo{width:285px;position:relative;filter:drop-shadow(0 30px 45px rgba(0,0,0,.6));animation:float 7s ease-in-out infinite}.dash{position:absolute;right:0;top:28%;width:205px;padding:13px;border:1px solid var(--line);border-radius:15px;background:rgba(8,20,33,.86);backdrop-filter:blur(14px);box-shadow:0 20px 45px #0008}.dash small,.mini small{color:#687a8b;font-size:8px}.dash strong{display:block;font-size:17px;margin-top:5px}.bars{height:62px;display:flex;align-items:end;gap:5px;margin-top:12px}.bars i{flex:1;border-radius:4px 4px 1px 1px;background:linear-gradient(#3bb9e9,#286eea);height:var(--h)}.mini{position:absolute;left:0;bottom:17%;padding:12px 14px;border:1px solid var(--line);border-radius:13px;background:#091624e8;font-size:10px;box-shadow:0 18px 40px #0007}.mini b{display:block;margin-top:4px;color:#8de0fa}@keyframes float{50%{transform:translateY(-13px) rotate(1deg)}}@keyframes spin{to{transform:rotate(360deg)}}
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0}.trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.trust strong{display:block;font-size:11px}.trust span{color:#667789;font-size:9px}
+.section{padding:110px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:45px}.kicker{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:13px}.section h2{font-size:clamp(43px,6vw,72px);line-height:.92;letter-spacing:-.07em;margin:0}.section-head p{max-width:410px;color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.product{min-height:280px;padding:25px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#0b1928,#07111c);position:relative;overflow:hidden;transition:.25s}.product:hover{transform:translateY(-5px);border-color:rgba(55,183,232,.3)}.product:after{content:"";position:absolute;width:170px;height:170px;right:-100px;bottom:-100px;border-radius:50%;background:radial-gradient(circle,rgba(49,176,230,.2),transparent 68%)}.product-icon{width:39px;height:39px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(145deg,#2b8eed,#1c62df);font-size:18px;margin-bottom:55px}.product h3{margin:0 0 9px;font-size:22px;letter-spacing:-.04em}.product p{margin:0;color:#7e8e9e;font-size:11px;line-height:1.6;max-width:330px}.learn{position:absolute;left:25px;bottom:22px;color:#48c4ef;font-size:10px;font-weight:800}.badge{font-size:8px;color:#9ddcf2;border:1px solid rgba(55,183,232,.25);padding:4px 6px;border-radius:999px;margin-left:5px}
+.work{display:grid;grid-template-columns:1.25fr .75fr;gap:13px}.work-card{min-height:430px;border:1px solid var(--line);border-radius:22px;background:#08131f;position:relative;overflow:hidden}.work-card.small{min-height:208px}.work-bg{position:absolute;inset:0;background:radial-gradient(circle at 70% 25%,rgba(55,183,232,.22),transparent 27%),linear-gradient(145deg,#10283d,#050b12 70%)}.work-ui{position:absolute;left:13%;right:13%;top:13%;bottom:20%;border:1px solid rgba(151,198,226,.18);border-radius:15px;background:#06101a;box-shadow:0 30px 55px #0008;padding:16px}.work-ui .topline{width:45%;height:7px;background:#42576a;border-radius:8px}.work-ui .hero-line{height:38px;margin-top:17px;width:72%;border-radius:8px;background:linear-gradient(90deg,#2768e7,#35b7e9)}.work-ui .row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.work-ui .box{height:70px;background:#0c2032;border-radius:7px}.work-copy{position:absolute;left:22px;right:22px;bottom:20px;z-index:2}.work-copy h3{margin:0 0 4px;font-size:21px}.work-copy p{margin:0;color:#8293a3;font-size:10px}.work-stack{display:grid;gap:13px}.small .work-bg{background:radial-gradient(circle at 25% 30%,rgba(40,112,237,.25),transparent 28%),linear-gradient(145deg,#0d2030,#050b12)}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.service{padding:24px;border:1px solid var(--line);border-radius:18px;background:#08131f;min-height:220px}.num{font-size:9px;color:#607285}.service h3{font-size:17px;margin:55px 0 9px}.service p{color:#7e8e9e;font-size:10px;line-height:1.6;margin:0}
+.principle{padding:78px 7%;border-radius:28px;background:linear-gradient(120deg,#215bd2,#289bd8 65%,#40bce7);position:relative;overflow:hidden}.principle:after{content:"T";position:absolute;right:-10px;bottom:-100px;font-size:380px;line-height:1;font-weight:900;color:#ffffff12}.principle p{font-size:9px;text-transform:uppercase;letter-spacing:.18em;margin:0 0 17px}.principle h2{max-width:900px;font-size:clamp(43px,6.5vw,78px);line-height:.9;letter-spacing:-.07em;margin:0;position:relative;z-index:1}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px}.about p{color:#95a4b3;font-size:15px;line-height:1.75}.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:35px}.fact{padding:17px 0;border-bottom:1px solid var(--line)}.fact strong{font-size:11px}.fact span{display:block;color:#657688;font-size:9px;margin-top:5px}
+.cta{padding-bottom:85px}.cta-box{padding:55px;border:1px solid rgba(55,183,232,.2);border-radius:27px;background:radial-gradient(circle at 80% 20%,rgba(40,124,229,.2),transparent 32%),#081421;display:flex;justify-content:space-between;align-items:end;gap:35px}.cta-box h2{font-size:clamp(45px,6vw,72px);line-height:.9;letter-spacing:-.07em;margin:0 0 16px}.cta-box p{max-width:480px;color:var(--muted);font-size:12px;line-height:1.65;margin:0}
+footer{border-top:1px solid var(--line);padding:38px 0 22px;color:#667789;font-size:9px}.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px}.footer-grid strong{display:block;color:#dbe5ed;margin-bottom:10px;font-size:10px}.footer-grid a{display:block;margin:6px 0}.footer-grid a:hover{color:#fff}.footer-logo{width:43px}.copy{border-top:1px solid var(--line);margin-top:30px;padding-top:17px;text-align:center;font-size:8px}
+form{display:grid;gap:10px;margin-top:25px;max-width:500px}input,textarea,select{width:100%;border:1px solid var(--line);background:#07111c;color:#fff;border-radius:10px;padding:12px;font-size:11px;outline:none}textarea{min-height:105px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:rgba(55,183,232,.5)}.form-msg{font-size:10px;color:#62c9ef;min-height:15px}
+@media(max-width:900px){.nav{display:none}.hero{grid-template-columns:1fr;padding-top:35px}.hero-art{min-height:390px;order:-1}.logo{width:230px}.orb{width:330px;height:330px}.ring{width:310px;height:310px}.dash{right:2%;top:22%;width:180px}.mini{left:2%;bottom:12%}.products{grid-template-columns:1fr 1fr}.services{grid-template-columns:1fr 1fr}.work{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:40px}.footer-grid{grid-template-columns:1fr 1fr}.cta-box{display:block}.cta-box .actions{margin-top:25px}}
+@media(max-width:560px){.wrap{width:min(calc(100% - 24px),var(--max))}header{height:70px}.brand img{width:43px}.nav-cta{padding:9px 13px}.hero{min-height:auto;padding:38px 0 70px}.hero-art{min-height:330px}.logo{width:185px}.orb{width:280px;height:280px}.ring{width:260px;height:260px}.dash{width:155px;right:0;top:14%}.mini{left:0;bottom:8%}.dash strong{font-size:14px}.bars{height:48px}.hero h1{font-size:clamp(50px,15vw,72px)}.hero p{font-size:14px}.trust-row{grid-template-columns:1fr 1fr;gap:18px}.section{padding:80px 0}.section-head{display:block}.section-head p{margin-top:18px}.products,.services{grid-template-columns:1fr}.product{min-height:240px}.product-icon{margin-bottom:45px}.work-card{min-height:380px}.work-card.small{min-height:190px}.principle{padding:50px 25px}.facts{grid-template-columns:1fr}.cta-box{padding:35px 25px}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header class="top">
-<a class="brand" href="#" aria-label="Tambala Technologies home"><img src="assets/tambala-logo.svg" alt="Tambala Technologies"></a>
-<nav class="nav" aria-label="Main navigation"><a href="#services">What we build</a><a href="#work">Work</a><a href="#studio">About</a></nav>
-<a class="nav-cta" href="#contact">Start a project ↗</a>
+<header>
+<a class="brand" href="#"><img src="assets/tambala-logo.svg" alt="Tambala Technologies"></a>
+<nav class="nav"><a href="#products">Products</a><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a></nav>
+<a class="nav-cta" href="#contact">Let's talk ↗</a>
 </header>
 
 <main>
 <section class="hero">
-<div class="hero-grid">
 <div>
-<div class="eyebrow"><i></i> Independent digital studio · Malawi</div>
-<h1>We build what <span class="blue">comes</span> <span class="cyan">next.</span></h1>
-<p class="hero-copy">Tambala Technologies turns ideas into websites, digital products and practical technology that people can actually use.</p>
-<div class="actions"><a class="btn primary" href="#contact">Start a project ↗</a><a class="btn secondary" href="#work">See what we've built</a></div>
+<div class="eyebrow"><span class="dot"></span> Technology company · Malawi</div>
+<h1>We build <span class="blue">technology</span> people actually use.</h1>
+<p>Websites, software and digital products — from a business website to a product we operate ourselves. We turn useful ideas into technology that works in the real world.</p>
+<div class="actions"><a class="btn primary" href="#products">Explore our products ↗</a><a class="btn secondary" href="#contact">Start a project</a></div>
 </div>
-<div class="hero-visual" aria-hidden="true">
-<div class="float-chip chip-a">Design + Development</div>
-<img class="hero-logo" src="assets/tambala-logo.svg" alt="">
-<div class="float-chip chip-b">Built in Malawi · Available worldwide</div>
+<div class="hero-art" aria-hidden="true">
+<div class="orb"></div><div class="ring"></div><img class="logo" src="assets/tambala-logo.svg" alt="">
+<div class="dash"><small>PocketVault · savings</small><strong>MWK 1,250,000</strong><div class="bars"><i style="--h:38%"></i><i style="--h:52%"></i><i style="--h:46%"></i><i style="--h:69%"></i><i style="--h:57%"></i><i style="--h:82%"></i><i style="--h:94%"></i></div></div>
+<div class="mini"><small>Tambala Pay</small><b>Payments, simplified.</b></div>
 </div>
-</div>
-<div class="scroll-note"><span></span> Scroll to explore</div>
 </section>
 
-<div class="band"><div class="band-row"><span><b>01</b> Websites</span><span><b>02</b> Digital products</span><span><b>03</b> Business systems</span><span><b>04</b> Brand & visual design</span></div></div>
+<div class="trust"><div class="trust-row"><div><strong>Made in Malawi</strong><span>Built for local realities</span></div><div><strong>Web + Software</strong><span>Design and development</span></div><div><strong>Products we own</strong><span>Building beyond client work</span></div><div><strong>Human-first</strong><span>Useful over complicated</span></div></div></div>
 
-<section class="section" id="services">
-<div class="section-head"><div><div class="kicker">01 / What we build</div><h2>Digital work<br>with a <span style="color:var(--cyan)">purpose.</span></h2></div><p>From a business website to a custom digital product, we combine design and development around the problem that needs solving.</p></div>
-<div class="services">
-<article class="service"><span class="num">01 / WEB</span><span class="icon">↗</span><h3>Websites</h3><p>Fast, responsive and conversion-focused websites that make businesses easier to trust and easier to find.</p></article>
-<article class="service"><span class="num">02 / PRODUCT</span><span class="icon">✦</span><h3>Digital Products</h3><p>Interfaces and web applications shaped around users, workflows and the experience your product needs.</p></article>
-<article class="service"><span class="num">03 / SYSTEMS</span><span class="icon">⌁</span><h3>Business Systems</h3><p>Purpose-built tools that organize information, reduce repetitive work and make operations easier.</p></article>
-<article class="service"><span class="num">04 / VISUAL</span><span class="icon">◇</span><h3>Brand & Visuals</h3><p>Distinct visual direction that gives your business a recognizable presence across digital touchpoints.</p></article>
+<section class="section" id="products">
+<div class="section-head"><div><div class="kicker">01 / Our products</div><h2>Technology we<br><span class="cyan">build ourselves.</span></h2></div><p>Tambala isn't only a service company. We're also building our own digital products — starting with tools around money, payments and communication.</p></div>
+<div class="products">
+<article class="product"><div class="product-icon">🔐</div><h3>PocketVault</h3><p>A digital savings platform designed to help people set goals, save consistently and manage their money from their phone.</p><a class="learn" href="#contact">Learn more →</a></article>
+<article class="product"><div class="product-icon">▣</div><h3>Tambala Pay <span class="badge">IN DEVELOPMENT</span></h3><p>A payments product focused on making it easier for people and businesses to send, receive and manage payments.</p><a class="learn" href="#contact">Learn more →</a></article>
+<article class="product"><div class="product-icon">✉</div><h3>Tambala Email</h3><p>Professional email services that let businesses communicate under their own brand and look credible at every touchpoint.</p><a class="learn" href="#contact">Learn more →</a></article>
 </div>
 </section>
 
 <section class="section" id="work">
-<div class="section-head"><div><div class="kicker">02 / Selected work</div><h2>Things we're<br><span style="color:var(--blue)">building.</span></h2></div><p>A selection of projects and products from Tambala Technologies — across hospitality, fintech, education and business technology.</p></div>
-<div class="work-grid">
-<article class="project project-main">
-<div class="project-visual"></div><div class="project-ui"><div class="bar"></div><div class="hero-line"></div><div class="line"></div><div class="line short"></div></div>
-<div class="project-copy"><div><h3>Malabi Guest House</h3><p>Hospitality · Website design & development</p></div><span class="tag">Client project</span></div>
-</article>
-<div style="display:grid;gap:14px">
-<article class="project project-side top"><div class="project-visual"></div><div class="project-copy"><div><h3>PocketVault</h3><p>Fintech · Digital product</p></div><span class="tag">In progress</span></div></article>
-<article class="project project-side bottom"><div class="project-visual" style="background:radial-gradient(circle at 72% 35%,rgba(57,183,233,.2),transparent 25%),linear-gradient(145deg,#0a1722,#03090e)"></div><div class="project-copy"><div><h3>Health Science Allocation</h3><p>Education · Business system</p></div><span class="tag">Concept</span></div></article>
+<div class="section-head"><div><div class="kicker">02 / Selected work</div><h2>Real projects.<br><span class="blue">Real problems.</span></h2></div><p>Client work and internal projects across hospitality, business technology, education and digital products.</p></div>
+<div class="work">
+<article class="work-card"><div class="work-bg"></div><div class="work-ui"><div class="topline"></div><div class="hero-line"></div><div class="row"><div class="box"></div><div class="box"></div></div></div><div class="work-copy"><h3>Malabi Exclusive Lodges</h3><p>Hospitality · Website design, development & deployment</p></div></article>
+<div class="work-stack">
+<article class="work-card small"><div class="work-bg"></div><div class="work-copy"><h3>PocketVault</h3><p>Fintech · Product development</p></div></article>
+<article class="work-card small"><div class="work-bg"></div><div class="work-copy"><h3>Custom business systems</h3><p>Automation · Dashboards · Internal tools</p></div></article>
 </div>
 </div>
 </section>
 
-<section class="section">
-<div class="principle"><p>The Tambala principle</p><h2>Good technology isn't just impressive. <span>It's useful.</span></h2></div>
+<section class="section" id="services">
+<div class="section-head"><div><div class="kicker">03 / What we do</div><h2>From idea<br>to <span class="cyan">working product.</span></h2></div><p>We work with businesses and founders who need technology that is practical, polished and ready to grow.</p></div>
+<div class="services">
+<article class="service"><span class="num">01 / WEB</span><h3>Web Development</h3><p>Responsive websites and web apps designed to look credible and work smoothly on the devices your customers use.</p></article>
+<article class="service"><span class="num">02 / SOFTWARE</span><h3>Custom Software</h3><p>Purpose-built systems for workflows, records, operations and business processes that don't fit off-the-shelf tools.</p></article>
+<article class="service"><span class="num">03 / AUTOMATION</span><h3>Dashboards & Automation</h3><p>Turn repetitive work and scattered information into clearer dashboards and smarter processes.</p></article>
+<article class="service"><span class="num">04 / PRODUCTS</span><h3>Product Development</h3><p>Have an idea for a digital product? We can help shape the concept, experience and technology behind it.</p></article>
+</div>
 </section>
 
-<section class="section" id="studio">
+<section class="section"><div class="principle"><p>The Tambala principle</p><h2>Good technology isn't just impressive. <span>It's useful.</span></h2></div></section>
+
+<section class="section" id="about">
 <div class="about">
-<div><div class="kicker">03 / The studio</div><h2>Small team.<br><span style="color:var(--cyan)">Big attention</span><br>to detail.</h2></div>
-<div class="about-copy">
-<p>Tambala Technologies is an independent digital studio from Malawi. We design and build digital experiences for businesses, ideas and products that deserve to move forward.</p>
-<p>We keep the process close: understand the problem, shape the experience, build it properly, then keep improving it.</p>
-<div class="facts">
-<div class="fact"><strong>Human-first</strong><span>Designed around real people and real behavior.</span></div>
-<div class="fact"><strong>Mobile-ready</strong><span>Built for the devices people actually use.</span></div>
-<div class="fact"><strong>Practical</strong><span>Technology should solve something.</span></div>
-<div class="fact"><strong>Built to grow</strong><span>Good foundations make the next version easier.</span></div>
-</div>
+<div><div class="kicker">04 / About Tambala</div><h2>Built here.<br><span class="cyan">Thinking bigger.</span></h2></div>
+<div>
+<p>Tambala Technologies is a Malawi-based technology company building digital products and delivering technology solutions for businesses, organisations and people.</p>
+<p>We started with websites and digital solutions. Now we're expanding into products of our own — including PocketVault, Tambala Pay and Tambala Email — with more ideas to come.</p>
+<div class="facts"><div class="fact"><strong>Local understanding</strong><span>We build with Malawi's devices, connectivity and business realities in mind.</span></div><div class="fact"><strong>Product mindset</strong><span>We don't just build and disappear. We build things meant to keep improving.</span></div><div class="fact"><strong>Practical design</strong><span>Clean interfaces, clear communication and experiences people can actually use.</span></div><div class="fact"><strong>Built to evolve</strong><span>Projects start focused, but the foundations leave room for what's next.</span></div></div>
 </div>
 </div>
 </section>
 
-<section class="cta" id="contact">
+<section class="section" id="contact">
 <div class="cta-box">
-<div><div class="kicker">04 / Start something</div><h2>Have an idea?<br><span>Let's build it.</span></h2><p>Tell us what you're trying to build, improve or launch. Start with a conversation and we'll figure out the right next step.</p></div>
-<div class="actions"><a class="btn primary" href="https://wa.me/265892025111">Talk on WhatsApp ↗</a><a class="btn secondary" href="mailto:madalitsotambala2@gmail.com">Send an email</a></div>
+<div><div class="kicker">05 / Start a project</div><h2>Have something<br><span class="cyan">worth building?</span></h2><p>Tell us what you're trying to build, improve or launch. You don't need a perfect brief — just tell us the idea.</p></div>
+<div class="actions"><a class="btn primary" href="https://wa.me/265892025111">WhatsApp Tambala ↗</a><a class="btn secondary" href="mailto:madalitsotambala2@gmail.com">Email us</a></div>
 </div>
 </section>
 </main>
 
-<footer><div class="foot"><span>© 2026 Tambala Technologies</span><span>Malawi · Design · Development · Digital solutions</span></div></footer>
+<footer>
+<div class="footer-grid">
+<div><img class="footer-logo" src="assets/tambala-logo.svg" alt="Tambala Technologies"><p>Technology company building digital products and practical solutions from Malawi.</p></div>
+<div><strong>Products</strong><a href="#products">PocketVault</a><a href="#products">Tambala Pay</a><a href="#products">Tambala Email</a></div>
+<div><strong>Company</strong><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a></div>
+<div><strong>Get in touch</strong><a href="mailto:madalitsotambala2@gmail.com">Email</a><a href="https://wa.me/265892025111">WhatsApp</a><a href="#contact">Start a project</a></div>
+</div>
+<div class="copy">© 2026 Tambala Technologies. All rights reserved. · Malawi</div>
+</footer>
 </div>
 </body>
 </html>
