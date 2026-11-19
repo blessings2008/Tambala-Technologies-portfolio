@@ -13,18 +13,18 @@ const resend = process.env.RESEND_API_KEY
 
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || "madalitsotambala2@gmail.com";
 const FROM_EMAIL = process.env.FROM_EMAIL || "Tambala Technologies <onboarding@resend.dev>";
-const allowedOrigin = process.env.ALLOWED_ORIGIN || "*";
-
 app.disable("x-powered-by");
-app.use(express.json({ limit: "20kb" }));
-app.use(express.urlencoded({ extended: false, limit: "20kb" }));
+app.set("trust proxy", 1);
 
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+  res.setHeader("X-Frame-Options", "DENY");
+  res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
   next();
 });
+app.use(express.json({ limit: "20kb" }));
+app.use(express.urlencoded({ extended: false, limit: "20kb" }));
 
 const requests = new Map();
 const RATE_LIMIT_WINDOW = 15 * 60 * 1000;
@@ -35,6 +35,12 @@ function rateLimit(req, res, next) {
   const now = Date.now();
   const previous = requests.get(key) || [];
   const recent = previous.filter((time) => now - time < RATE_LIMIT_WINDOW);
+
+  if (requests.size > 10000) {
+    for (const [ip, timestamps] of requests.entries()) {
+      if (!timestamps.some((time) => now - time < RATE_LIMIT_WINDOW)) requests.delete(ip);
+    }
+  }
 
   if (recent.length >= RATE_LIMIT_MAX) {
     return res.status(429).json({
@@ -165,6 +171,14 @@ app.use((req, res) => {
     success: false,
     message: "Route not found."
   });
+});
+
+app.use((error, req, res, next) => {
+  if (error && error.status === 400) {
+    return res.status(400).json({ success: false, message: "Invalid request body." });
+  }
+  console.error("Unhandled server error:", error);
+  return res.status(500).json({ success: false, message: "Something went wrong. Please try again." });
 });
 
 app.listen(PORT, () => {
