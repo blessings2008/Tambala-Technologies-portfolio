@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Tambala Technologies</title>
+  <rect width="64" height="64" rx="15" fill="#062b31"/>
+  <path d="M8 13h21v12l-7 4-4 22h-9l5-23-10-6z" fill="#2d64e8"/>
+  <path d="M35 17h21l-5 12-10 6 5 16h-9l-4-22-4-4V17z" fill="#39b5e8"/>
+  <path d="m32 25 8 8-8 8-8-8z" fill="#fff"/>
+  <path d="m32 29 4 4-4 4-4-4z" fill="#8fdcf2"/>
+</svg>
