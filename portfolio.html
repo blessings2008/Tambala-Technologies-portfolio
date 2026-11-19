@@ -1,3 +1,123 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A look at client work, internal systems and products we're developing at Tambala Technologies."><title>Portfolio — Tambala Technologies</title><link rel="stylesheet" href="styles.css"><style>body > .wrap{width:100%;max-width:none;margin:0;padding:0}</style></head><body class="page-portfolio"><div class="wrap"><header><a class="brand" href="index.html"><img src="assets/tambala-logo.svg" alt="Tambala Technologies"></a><nav class="nav"><a href="index.html">Home</a><a href="portfolio.html" class="active">Portfolio</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="services.html">Services</a><a href="documentation.html">Documentation</a></nav><a class="cta header-cta" href="contact.html">Start a project ↗</a><button class="menu" onclick="document.getElementById('m').classList.toggle('show')">☰</button></header><nav id="m" class="mobile-nav"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="services.html">Services</a><a href="documentation.html">Documentation</a><a href="contact.html">Contact</a></nav><main><section class="hero page-hero"><div class="kicker">Portfolio</div><h1>Things we've built.</h1><p>A look at client work, internal systems and products we're developing at Tambala Technologies.</p></section><section class="section"><div class="case"><div class="case-visual"></div><div class="case-copy"><div class="meta">HOSPITALITY · WEBSITE</div><h3>Malabi Exclusive Lodges</h3><p>A responsive hospitality website designed around rooms, facilities, gallery, enquiries, location and mobile-first customer experience.</p><a class="btn primary" href="contact.html">Start a project ↗</a></div></div><div class="grid"><article class="card"><div class="icon">🔐</div><h3>PocketVault</h3><p>Fintech product development focused on digital savings, goals and money management.</p></article><article class="card"><div class="icon">⚙</div><h3>Business Systems</h3><p>Dashboards, automation and purpose-built internal tools for real operational workflows.</p></article><article class="card"><div class="icon">🌐</div><h3>Web Projects</h3><p>Modern websites for businesses that need a stronger digital presence and better customer journeys.</p></article></div></section></main><footer class="footer"><div class="footer-row"><div>© 2026 Tambala Technologies · Malawi</div><div class="footer-links"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="products.html">Products</a><a href="documentation.html">Docs</a><a href="contact.html">Contact</a></div></div></footer></div><script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore client website work and digital products in development at Tambala Technologies, Malawi.">
+  <title>Portfolio — Tambala Technologies</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body.page-portfolio main>.section{padding-top:64px}
+    .portfolio-intro{display:flex;justify-content:space-between;align-items:end;gap:24px;margin:0 0 26px}
+    .portfolio-intro h2{font-size:clamp(30px,4vw,42px);margin:0 0 8px}
+    .portfolio-intro p{max-width:590px;margin:0;color:var(--muted);font-size:13px;line-height:1.75}
+    .project-feature{display:grid;grid-template-columns:1.15fr .85fr;overflow:hidden;border:1px solid #dce8e2;border-radius:22px;background:#fff;box-shadow:0 12px 34px rgba(7,44,48,.06)}
+    .project-image{min-height:390px;background:#dce8e2 url('https://raw.githubusercontent.com/blessings2008/Malabi-lodge/main/assets/images/image-02.webp') center/cover no-repeat;position:relative}
+    .project-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,28,34,.28),transparent 55%)}
+    .project-copy{padding:clamp(25px,4vw,48px);align-self:center}
+    .project-label{display:inline-flex;align-items:center;gap:8px;color:#087d58;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    .project-label:before{content:"";width:7px;height:7px;border-radius:50%;background:#19a76a}
+    .project-copy h3{font:800 clamp(28px,3.4vw,42px)/1.04 Manrope,sans-serif;letter-spacing:-.055em;color:#092d43;margin:15px 0 12px}
+    .project-copy>p{color:#64808a;font-size:13px;line-height:1.8;margin:0 0 18px}
+    .project-points{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:20px 0 25px}
+    .project-points span{font-size:11px;color:#345c59;padding:10px 11px;border-radius:10px;background:#f0f6f2}
+    .project-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .project-actions a{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:999px;font-size:11px;font-weight:800}
+    .project-actions .live-link{background:#ffc85e;color:#172c2c}
+    .project-actions .contact-link{border:1px solid #dce8e2;color:#16444a}
+    .development-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .development-card{padding:23px;border:1px solid #e2eae5;border-radius:17px;background:#fff;min-height:205px}
+    .development-card .icon{margin-bottom:19px}
+    .development-card h3{font:700 19px Manrope,sans-serif;letter-spacing:-.04em;color:#092d43;margin:0 0 8px}
+    .development-card p{font-size:12px;line-height:1.75;color:#64808a;margin:0 0 15px}
+    .status-note{display:inline-block;padding:6px 9px;border-radius:999px;background:#fff5dc;color:#806020;font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .portfolio-note{margin-top:22px;padding:18px 20px;border:1px solid #dce8e2;border-radius:14px;background:#f4f8f5;color:#56736a;font-size:12px;line-height:1.7}
+    @media(max-width:900px){.project-feature{grid-template-columns:1fr}.project-image{min-height:300px}.development-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:600px){.portfolio-intro{display:block}.project-image{min-height:230px}.project-copy{padding:23px}.project-points{grid-template-columns:1fr 1fr}.development-grid{grid-template-columns:1fr}.development-card{min-height:0}}
+  </style>
+</head>
+<body class="page-portfolio">
+<div class="wrap">
+  <header>
+    <a class="brand" href="index.html"><img src="assets/tambala-logo.svg" alt="Tambala Technologies"></a>
+    <nav class="nav"><a href="index.html">Home</a><a href="portfolio.html" class="active">Portfolio</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="services.html">Services</a><a href="documentation.html">Documentation</a></nav>
+    <a class="cta header-cta" href="contact.html">Start a project ↗</a>
+    <button class="menu" id="pageMenuBtn" aria-label="Open navigation" aria-expanded="false" type="button">☰</button>
+  </header>
+  <nav id="m" class="mobile-nav">
+    <a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="services.html">Services</a><a href="documentation.html">Documentation</a><a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <section class="hero page-hero">
+      <div class="kicker">Selected work</div>
+      <h1>Digital work, built with purpose.</h1>
+      <p>A growing collection of websites built for clients and digital products being developed by Tambala Technologies.</p>
+    </section>
+    <section class="section">
+      <div class="portfolio-intro">
+        <div><div class="kicker">Client project</div><h2>Work delivered for a real business.</h2></div>
+        <p>We focus on practical digital experiences that help organisations present their services clearly and make it easier for customers to take the next step.</p>
+      </div>
+      <article class="project-feature">
+        <div class="project-image" role="img" aria-label="Interior photograph from Malabi Exclusive Lodges"></div>
+        <div class="project-copy">
+          <div class="project-label">Hospitality · Website development</div>
+          <h3>Malabi Exclusive Lodges</h3>
+          <p>A responsive website created for a hospitality business, bringing its accommodation options, visual gallery and customer enquiry routes together in one place.</p>
+          <div class="project-points">
+            <span>Room and accommodation presentation</span>
+            <span>Photo gallery experience</span>
+            <span>Customer enquiry form</span>
+            <span>WhatsApp and contact pathways</span>
+            <span>Location and map information</span>
+            <span>Mobile-friendly layouts</span>
+          </div>
+          <div class="project-actions">
+            <a class="live-link" href="https://malabi-lodge-1.onrender.com" target="_blank" rel="noopener noreferrer">View live website ↗</a>
+            <a class="contact-link" href="contact.html">Discuss a similar project</a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="section">
+      <div class="portfolio-intro">
+        <div><div class="kicker">Tambala products</div><h2>Products in development.</h2></div>
+        <p>These are in-house product initiatives. They are shown here as work in progress, not as publicly launched services.</p>
+      </div>
+      <div class="development-grid">
+        <article class="development-card">
+          <div class="icon">🔐</div>
+          <h3>PocketVault</h3>
+          <p>A Tambala digital product concept focused on personal savings, financial goals and money management.</p>
+          <span class="status-note">In development</span>
+        </article>
+        <article class="development-card">
+          <div class="icon">↗</div>
+          <h3>Tambala Pay</h3>
+          <p>An in-house payments product initiative being developed as part of the Tambala digital product portfolio.</p>
+          <span class="status-note">In development</span>
+        </article>
+        <article class="development-card">
+          <div class="icon">✉</div>
+          <h3>Tambala Email</h3>
+          <p>A Tambala email-service initiative, currently part of our ongoing product development work.</p>
+          <span class="status-note">In development</span>
+        </article>
+      </div>
+      <div class="portfolio-note">This portfolio is being expanded as more client projects are completed and approved for public display. We do not publish client results, testimonials or project metrics without verification.</div>
+    </section>
+    <section class="section">
+      <div class="portfolio-intro">
+        <div><div class="kicker">Have a project?</div><h2>Let’s build something useful.</h2></div>
+        <p>From a business website to a custom digital solution, tell us what you are working on and we can explore the right approach.</p>
+      </div>
+      <a class="btn primary" href="contact.html">Start a conversation ↗</a>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-row"><div>© 2026 Tambala Technologies · Malawi</div><div class="footer-links"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="products.html">Products</a><a href="documentation.html">Docs</a><a href="contact.html">Contact</a></div></div></footer>
+</div>
+<script>
 (()=>{const menu=document.getElementById('m');const btn=document.getElementById('pageMenuBtn')||document.querySelector('header .menu');if(!menu||!btn)return;const close=()=>{menu.classList.remove('show');btn.setAttribute('aria-expanded','false');document.body.style.overflow=''};btn.addEventListener('click',()=>{const open=!menu.classList.contains('show');menu.classList.toggle('show',open);btn.setAttribute('aria-expanded',String(open));document.body.style.overflow=open?'hidden':''});menu.addEventListener('click',e=>{if(e.target===menu)close()});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})})();
-</script></body></html>
+</script>
+</body>
+</html>
