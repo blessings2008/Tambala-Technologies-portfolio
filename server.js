@@ -36,9 +36,15 @@ function rateLimit(req, res, next) {
   const previous = requests.get(key) || [];
   const recent = previous.filter((time) => now - time < RATE_LIMIT_WINDOW);
 
-  if (requests.size > 10000) {
+  if (!requests.has(key) && requests.size >= 10000) {
     for (const [ip, timestamps] of requests.entries()) {
       if (!timestamps.some((time) => now - time < RATE_LIMIT_WINDOW)) requests.delete(ip);
+    }
+    if (requests.size >= 10000) {
+      return res.status(503).json({
+        success: false,
+        message: "The enquiry service is busy. Please try again shortly."
+      });
     }
   }
 
