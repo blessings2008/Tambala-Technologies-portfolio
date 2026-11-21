@@ -82,3 +82,13 @@ video{height:auto}
   .footer-row{align-items:flex-start}
   .footer-links{row-gap:12px}
 }
+
+
+/* Readable legal page layout */
+.legal-copy{max-width:900px;margin:0 auto;color:#45616b;font-size:14px;line-height:1.8}
+.legal-copy h2{margin:34px 0 10px;color:#092d43;font-family:Manrope,sans-serif;font-size:clamp(21px,2.6vw,27px);letter-spacing:-.035em;line-height:1.2}
+.legal-copy p{margin:0 0 15px}
+.legal-copy ul{padding-left:22px;margin:0 0 20px}
+.legal-copy li{padding:3px 0}
+.legal-copy a{color:#087d58;text-decoration:underline;text-underline-offset:3px}
+.legal-copy .notice{margin-top:28px;padding:18px 20px;border-left:3px solid #20b978;border-radius:0 12px 12px 0;background:#e8f5ed;color:#426e60;font-size:13px}
